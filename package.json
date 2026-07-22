@@ -1,0 +1,11 @@
+{
+  "name": "tesla-kr-lineup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-lineup.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}

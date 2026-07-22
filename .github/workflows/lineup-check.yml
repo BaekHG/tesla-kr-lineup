@@ -1,0 +1,59 @@
+name: Lineup Check
+
+on:
+  schedule:
+    # 매일 06:00 KST (전날 21:00 UTC)
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/lineup-check.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Run lineup checker
+        id: check
+        run: node scripts/check-lineup.mjs
+
+      - name: Upload run report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lineup-report-${{ github.run_id }}
+          path: reports/
+          if-no-files-found: warn
+
+      - name: Create pull request if changes
+        if: steps.check.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "auto: refresh lineup_overrides.json"
+          title: "[auto] lineup 변경 감지 — 확인 필요"
+          body: |
+            자동 감지된 라인업 변경 후보입니다.
+            `reports/` 폴더의 최신 리포트를 확인하고 diff가 맞다면 머지하세요.
+
+            - Tesla API 응답 변경 감지
+            - Google News RSS 시그널 감지
+
+            **머지 전 반드시 사람 눈으로 검증 필요.**
+          branch: auto/lineup-refresh
+          delete-branch: true
+          add-paths: |
+            lineup_overrides.json
+            reports/
