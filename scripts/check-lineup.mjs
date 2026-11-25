@@ -22,14 +22,18 @@ const TESLA_API = 'https://apigateway-pricing-gateway.tesla.com/pricing/v2/KR?re
 const NEWS_RSS = (q) =>
   `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=ko&gl=KR&ceid=KR:ko`;
 
-// Tesla API `trim_code` → 우리 로컬 trim.id (앱과 동기 유지)
+// Tesla API `trim_code` → 우리 로컬 trim.id (앱 price_sync_service.dart 와 동기 유지)
+// 테슬라가 2026-09 즈음 코드를 바꿨다. 옛 코드는 돌아올 때 대비해 남겨둔다.
 const TRIM_CODE_MAP = {
   $MT367: 'model3_rwd',
   $MT369: 'model3_lr_rwd',
   $MT371: 'model3_perf',
+  $MT381: 'model3_perf',
   $MTY56: 'modely_rwd',
   $MTY64: 'modely_lr_awd',
+  $MTY89: 'modely_lr_awd',
   $MTY74: 'modely_l',
+  $MTY91: 'modely_l',
   $MTS22: 'models_lr',
   $MTS23: 'models_plaid',
   $MTX22: 'modelx_lr',
@@ -67,12 +71,18 @@ async function main() {
   const apiSnapshot = parseApi(api);
   findings.push(...diffApiVsOverride(apiSnapshot, override));
 
-  // 2. 뉴스 시그널
+  // 2. 뉴스 시그널 — Google News 는 연속 요청에 429 를 주므로 간격을 둔다.
   for (const sig of SIGNALS) {
     for (const q of sig.queries) {
+      await sleep(3000);
       try {
         const items = await fetchNews(q, sig.keywords, 7);
-        for (const it of items) findings.push({ kind: sig.kind, ...it });
+        // 사람이 마지막으로 확인한 날(lastVerified) 이전 기사는 이미 반영된 것으로 본다.
+        const verifiedAt = new Date(override.lastVerified ?? 0).getTime();
+        for (const it of items) {
+          if (new Date(it.pub).getTime() < verifiedAt) continue;
+          findings.push({ kind: sig.kind, ...it });
+        }
       } catch (e) {
         findings.push({
           kind: 'error',
@@ -105,7 +115,11 @@ async function main() {
   }
   const gitOutput = process.env.GITHUB_OUTPUT;
   if (gitOutput) {
-    const shouldPr = changed || findings.some((f) => f.kind !== 'ok');
+    // 조회 실패(error)는 사람이 볼 변경이 아니라 PR 을 열지 않고 경고로만 남긴다.
+    const shouldPr = changed || findings.some((f) => f.kind !== 'ok' && f.kind !== 'error');
+    for (const f of findings.filter((x) => x.kind === 'error')) {
+      console.log(`::warning::${f.detail}`);
+    }
     await fs.appendFile(gitOutput, `has_changes=${shouldPr}\n`);
   }
 }
@@ -118,12 +132,20 @@ async function fetchJson(url) {
   return r.json();
 }
 
-async function fetchText(url) {
-  const r = await fetch(url, {
-    headers: { Accept: 'application/rss+xml, text/xml', 'User-Agent': 'tesla-kr-lineup-bot/1' },
-  });
-  if (!r.ok) throw new Error(`${url} → ${r.status}`);
-  return r.text();
+async function fetchText(url, attempts = 3) {
+  for (let i = 0; i < attempts; i++) {
+    const r = await fetch(url, {
+      headers: { Accept: 'application/rss+xml, text/xml', 'User-Agent': 'tesla-kr-lineup-bot/1' },
+    });
+    if (r.ok) return r.text();
+    // 429 만 재시도. 대기 시간은 10s → 20s.
+    if (r.status !== 429 || i === attempts - 1) throw new Error(`${url} → ${r.status}`);
+    await sleep(10_000 * (i + 1));
+  }
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function parseApi(raw) {
@@ -171,7 +193,11 @@ function diffApiVsOverride(api, override) {
   const apiLocalIds = new Set(
     Object.values(api.models).flatMap((ts) => ts.map((t) => t.local_id).filter(Boolean)),
   );
+  // hide 된 모델/트림은 API 에서 빠지는 게 정상이라 알림 제외.
+  const hiddenTrims = new Set(override.hideTrims ?? []);
   for (const id of knownIds) {
+    const modelId = id.split('_')[0];
+    if (override.hide.includes(modelId) || hiddenTrims.has(id)) continue;
     if (!apiLocalIds.has(id)) {
       findings.push({
         kind: 'trim_missing_from_api',
