@@ -1,0 +1,3947 @@
+{
+  "schemaVersion": 1,
+  "source": "https://ev.or.kr/nportal/buySupprt/initSubsidyPaymentCheckAction.do",
+  "year": 2026,
+  "carType": "전기승용",
+  "updatedAt": "2026-11-25T06:39:39.008Z",
+  "regions": [
+    {
+      "region": "서울특별시",
+      "short": "서울",
+      "closed": true,
+      "deadline": "2026.11.11 13:45",
+      "announced": 19648,
+      "received": 19532,
+      "selected": 19517,
+      "released": 19354,
+      "selectionRemaining": 131,
+      "releaseRemaining": 294,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.26 10:00 ~ 2026.06.22 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.27 10:00 ~ 2026.08.07 13:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.17 10:00 ~ 2026.11.11 13:45"
+        }
+      ]
+    },
+    {
+      "region": "부산광역시",
+      "short": "부산",
+      "closed": true,
+      "deadline": "2026.10.23 16:13",
+      "announced": 8629,
+      "received": 8757,
+      "selected": 8757,
+      "released": 8757,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.28 09:00 ~ 2026.04.17 10:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.27 11:00 ~ 2026.05.27 12:09"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.13 10:00 ~ 2026.09.30 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.10.14 10:00 ~ 2026.10.23 16:13"
+        }
+      ]
+    },
+    {
+      "region": "대구광역시",
+      "short": "대구",
+      "closed": true,
+      "deadline": "2026.10.08 17:00",
+      "announced": 5187,
+      "received": 5558,
+      "selected": 5557,
+      "released": 5459,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.02.06 17:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.20 10:00 ~ 2026.06.30 17:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.06 10:00 ~ 2026.07.10 17:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.10.01 09:00 ~ 2026.12.04 17:00"
+        }
+      ]
+    },
+    {
+      "region": "인천광역시",
+      "short": "인천",
+      "closed": false,
+      "deadline": "2026.11.30 18:00",
+      "announced": 9036,
+      "received": 9151,
+      "selected": 9124,
+      "released": 9110,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.05.20 09:00 ~ 2026.07.03 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.22 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "광주광역시",
+      "short": "광주",
+      "closed": true,
+      "deadline": "2026.08.20 13:46",
+      "announced": 2606,
+      "received": 2688,
+      "selected": 2688,
+      "released": 2643,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 09:00 ~ 2026.03.27 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.28 10:00 ~ 2026.05.28 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.20 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "대전광역시",
+      "short": "대전",
+      "closed": true,
+      "deadline": "2026.07.07 18:00",
+      "announced": 1726,
+      "received": 2346,
+      "selected": 2346,
+      "released": 2345,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.28 09:00 ~ 2026.03.09 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.07 10:00 ~ 2026.07.07 18:00"
+        }
+      ]
+    },
+    {
+      "region": "울산광역시",
+      "short": "울산",
+      "closed": true,
+      "deadline": "2026.09.18 11:02",
+      "announced": 3186,
+      "received": 3859,
+      "selected": 3859,
+      "released": 3859,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.26 09:00 ~ 2026.04.30 19:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.02 10:00 ~ 2026.07.16 10:33"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.18 11:00 ~ 2026.09.18 11:02"
+        }
+      ]
+    },
+    {
+      "region": "세종특별자치시",
+      "short": "세종",
+      "closed": true,
+      "deadline": "2026.08.25 11:17",
+      "announced": 1221,
+      "received": 982,
+      "selected": 918,
+      "released": 903,
+      "selectionRemaining": 303,
+      "releaseRemaining": 318,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 14:00 ~ 2026.03.26 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.10 14:00 ~ 2026.07.28 15:30"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.20 14:00 ~ 2026.08.25 11:17"
+        }
+      ]
+    },
+    {
+      "region": "수원시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.08.18 12:28",
+      "announced": 4209,
+      "received": 4238,
+      "selected": 4238,
+      "released": 4209,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.04.09 14:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 09:00 ~ 2026.06.18 09:01"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.03 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "성남시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.26 10:30",
+      "announced": 2824,
+      "received": 2824,
+      "selected": 2824,
+      "released": 2824,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.05.13 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.09 10:00 ~ 2026.10.26 10:30"
+        }
+      ]
+    },
+    {
+      "region": "의정부시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.14 12:00",
+      "announced": 909,
+      "received": 992,
+      "selected": 933,
+      "released": 919,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.06.10 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.11 10:00 ~ 2026.07.01 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.14 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "안양시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.22 14:05",
+      "announced": 1755,
+      "received": 1820,
+      "selected": 1781,
+      "released": 1756,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.09.22 14:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "부천시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.08.14 11:10",
+      "announced": 727,
+      "received": 731,
+      "selected": 731,
+      "released": 727,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.04.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.13 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.10 09:00 ~ 2026.11.27 18:00"
+        }
+      ]
+    },
+    {
+      "region": "광명시",
+      "short": "경기",
+      "closed": false,
+      "deadline": "2026.12.04 18:00",
+      "announced": 1050,
+      "received": 879,
+      "selected": 871,
+      "released": 801,
+      "selectionRemaining": 179,
+      "releaseRemaining": 249,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.29 09:00 ~ 2026.04.30 10:30"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.07.01 10:14"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.30 14:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "평택시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.06 10:00",
+      "announced": 165,
+      "received": 2544,
+      "selected": 2336,
+      "released": 2317,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.10.06 09:30 ~ 2026.12.31 17:00"
+        }
+      ]
+    },
+    {
+      "region": "동두천시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.30 14:29",
+      "announced": 85,
+      "received": 245,
+      "selected": 245,
+      "released": 241,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.09.14 09:00 ~ 2026.12.07 18:00"
+        }
+      ]
+    },
+    {
+      "region": "안산시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.15 18:00",
+      "announced": 1344,
+      "received": 1354,
+      "selected": 1353,
+      "released": 1343,
+      "selectionRemaining": 0,
+      "releaseRemaining": 1,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.04.21 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 09:00 ~ 2026.06.19 13:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.23 14:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "고양시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.29 14:10",
+      "announced": 3001,
+      "received": 3196,
+      "selected": 3012,
+      "released": 2995,
+      "selectionRemaining": 0,
+      "releaseRemaining": 6,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.05.15 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.27 11:00 ~ 2026.07.07 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.29 14:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "과천시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.21 10:24",
+      "announced": 283,
+      "received": 300,
+      "selected": 283,
+      "released": 283,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.05.06 08:59"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.18 09:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "구리시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.11.09 11:00",
+      "announced": 840,
+      "received": 729,
+      "selected": 727,
+      "released": 724,
+      "selectionRemaining": 113,
+      "releaseRemaining": 116,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.15 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "남양주시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.08.03 18:00",
+      "announced": 2330,
+      "received": 2553,
+      "selected": 2551,
+      "released": 2523,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.26 09:00 ~ 2026.04.03 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.13 10:00 ~ 2026.08.03 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.04 10:00 ~ 2026.08.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "오산시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.21 16:05",
+      "announced": 801,
+      "received": 869,
+      "selected": 855,
+      "released": 801,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.05.14 10:00 ~ 2026.06.15 13:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.18 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "시흥시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.05.08 18:00",
+      "announced": 783,
+      "received": 783,
+      "selected": 783,
+      "released": 783,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.03.20 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.08 11:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "군포시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.17 11:34",
+      "announced": 720,
+      "received": 728,
+      "selected": 723,
+      "released": 720,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 09:00 ~ 2026.04.21 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.08 10:00 ~ 2026.08.19 11:50"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.17 10:00 ~ 2026.09.17 11:34"
+        }
+      ]
+    },
+    {
+      "region": "의왕시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.16 10:02",
+      "announced": 606,
+      "received": 639,
+      "selected": 607,
+      "released": 597,
+      "selectionRemaining": 0,
+      "releaseRemaining": 9,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.04.13 10:08"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.14 10:00 ~ 2026.07.23 11:30"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.16 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "하남시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.07 18:00",
+      "announced": 1318,
+      "received": 1334,
+      "selected": 1309,
+      "released": 1302,
+      "selectionRemaining": 9,
+      "releaseRemaining": 16,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.06.05 09:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "용인시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.11.06 16:30",
+      "announced": 4234,
+      "received": 4634,
+      "selected": 4262,
+      "released": 4129,
+      "selectionRemaining": 0,
+      "releaseRemaining": 105,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.04.28 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 10:00 ~ 2026.07.01 15:40"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.11.06 15:00 ~ 2026.11.06 16:30"
+        }
+      ]
+    },
+    {
+      "region": "파주시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.16 16:20",
+      "announced": 1640,
+      "received": 1922,
+      "selected": 1661,
+      "released": 1638,
+      "selectionRemaining": 0,
+      "releaseRemaining": 2,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.27 10:00 ~ 2026.03.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.08 14:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.15 10:00 ~ 2026.10.16 16:20"
+        }
+      ]
+    },
+    {
+      "region": "이천시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.11.09 12:00",
+      "announced": 878,
+      "received": 993,
+      "selected": 900,
+      "released": 892,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 10:00 ~ 2026.05.29 08:59"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.08 10:00 ~ 2026.10.02 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.11.03 10:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "안성시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.29 10:02",
+      "announced": 689,
+      "received": 696,
+      "selected": 691,
+      "released": 689,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.03.23 09:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.20 09:00 ~ 2026.04.23 09:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.03 09:00 ~ 2026.07.03 09:33"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.09.29 10:00 ~ 2026.09.29 10:02"
+        }
+      ]
+    },
+    {
+      "region": "김포시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.28 10:00",
+      "announced": 1699,
+      "received": 1780,
+      "selected": 1765,
+      "released": 1746,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.01 13:00 ~ 2026.07.07 14:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.21 09:30 ~ 2026.09.28 10:00"
+        }
+      ]
+    },
+    {
+      "region": "화성시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.30 10:10",
+      "announced": 4191,
+      "received": 4191,
+      "selected": 4191,
+      "released": 4191,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.05.22 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.22 10:00 ~ 2026.06.23 13:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.30 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "광주시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.09.01 10:04",
+      "announced": 1701,
+      "received": 1306,
+      "selected": 1306,
+      "released": 1286,
+      "selectionRemaining": 395,
+      "releaseRemaining": 415,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.05.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.01 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.01 10:00 ~ 2026.10.01 10:07"
+        }
+      ]
+    },
+    {
+      "region": "양주시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.11.04 09:01",
+      "announced": 1445,
+      "received": 1224,
+      "selected": 1045,
+      "released": 1028,
+      "selectionRemaining": 400,
+      "releaseRemaining": 417,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.04.27 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "-"
+        },
+        {
+          "kind": "추경2차",
+          "period": "-"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.11.04 09:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "포천시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.30 18:00",
+      "announced": 473,
+      "received": 457,
+      "selected": 457,
+      "released": 451,
+      "selectionRemaining": 16,
+      "releaseRemaining": 22,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.04.05 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.13 10:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.07 10:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    },
+    {
+      "region": "여주시",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.10.07 08:00",
+      "announced": 441,
+      "received": 480,
+      "selected": 449,
+      "released": 444,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.06.01 09:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.10.01 15:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "연천군",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.11.09 18:00",
+      "announced": 242,
+      "received": 178,
+      "selected": 155,
+      "released": 151,
+      "selectionRemaining": 87,
+      "releaseRemaining": 91,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.22 09:00 ~ 2026.03.19 14:09"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.03 09:00 ~ 2026.07.10 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.11.09 09:00 ~ 2026.11.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "가평군",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.07.27 09:00",
+      "announced": 203,
+      "received": 208,
+      "selected": 208,
+      "released": 208,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.28 09:00 ~ 2026.06.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.15 09:00 ~ 2026.12.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "양평군",
+      "short": "경기",
+      "closed": true,
+      "deadline": "2026.07.07 11:35",
+      "announced": 462,
+      "received": 462,
+      "selected": 462,
+      "released": 462,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.04.06 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.07 09:00 ~ 2026.05.20 17:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.07 10:00 ~ 2026.07.07 11:35"
+        }
+      ]
+    },
+    {
+      "region": "춘천시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.09.29 09:00",
+      "announced": 1700,
+      "received": 1160,
+      "selected": 1160,
+      "released": 1160,
+      "selectionRemaining": 540,
+      "releaseRemaining": 540,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.04.15 10:00 ~ 2026.05.08 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.18 10:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "원주시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.10.01 14:40",
+      "announced": 1200,
+      "received": 1375,
+      "selected": 1375,
+      "released": 1375,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.04.14 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.28 09:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.22 09:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "강릉시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.21 03:00",
+      "announced": 740,
+      "received": 763,
+      "selected": 754,
+      "released": 753,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 09:00 ~ 2026.04.16 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.27 10:00 ~ 2026.05.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.21 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "동해시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.27 14:38",
+      "announced": 444,
+      "received": 245,
+      "selected": 245,
+      "released": 245,
+      "selectionRemaining": 199,
+      "releaseRemaining": 199,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.05.05 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.05.29 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.27 14:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "태백시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.18 11:01",
+      "announced": 264,
+      "received": 186,
+      "selected": 186,
+      "released": 171,
+      "selectionRemaining": 78,
+      "releaseRemaining": 93,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.05.13 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.18 09:00 ~ 2026.07.10 13:30"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.18 09:00 ~ 2026.08.18 11:01"
+        }
+      ]
+    },
+    {
+      "region": "속초시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.09.28 09:50",
+      "announced": 216,
+      "received": 217,
+      "selected": 217,
+      "released": 212,
+      "selectionRemaining": 0,
+      "releaseRemaining": 4,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.09.08 09:00 ~ 2026.09.08 09:03"
+        }
+      ]
+    },
+    {
+      "region": "삼척시",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.27 18:00",
+      "announced": 185,
+      "received": 194,
+      "selected": 190,
+      "released": 185,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 11:00 ~ 2026.06.24 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.08.27 09:00 ~ 2026.12.09 18:00"
+        }
+      ]
+    },
+    {
+      "region": "홍천군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.07.22 14:07",
+      "announced": 185,
+      "received": 197,
+      "selected": 196,
+      "released": 196,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.05.27 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.22 14:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "횡성군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.09.28 10:01",
+      "announced": 112,
+      "received": 112,
+      "selected": 112,
+      "released": 112,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.09.28 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "영월군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.09.21 13:06",
+      "announced": 212,
+      "received": 122,
+      "selected": 109,
+      "released": 109,
+      "selectionRemaining": 103,
+      "releaseRemaining": 103,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.07.06 10:00 ~ 2026.07.07 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.21 13:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "평창군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.09.30 16:00",
+      "announced": 130,
+      "received": 115,
+      "selected": 115,
+      "released": 107,
+      "selectionRemaining": 15,
+      "releaseRemaining": 23,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.30 09:00 ~ 2026.12.09 18:00"
+        }
+      ]
+    },
+    {
+      "region": "정선군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.11.10 18:00",
+      "announced": 150,
+      "received": 142,
+      "selected": 140,
+      "released": 138,
+      "selectionRemaining": 10,
+      "releaseRemaining": 12,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 09:00 ~ 2026.06.29 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.30 09:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "철원군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.27 11:10",
+      "announced": 116,
+      "received": 116,
+      "selected": 116,
+      "released": 116,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.08.27 11:00 ~ 2026.08.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "화천군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.11.09 10:20",
+      "announced": 144,
+      "received": 104,
+      "selected": 104,
+      "released": 104,
+      "selectionRemaining": 40,
+      "releaseRemaining": 40,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.04.17 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.20 10:00 ~ 2026.07.29 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.11 10:00 ~ 2026.09.11 17:30"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.11.02 10:00 ~ 2026.11.20 17:30"
+        }
+      ]
+    },
+    {
+      "region": "양구군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.11 10:02",
+      "announced": 176,
+      "received": 89,
+      "selected": 89,
+      "released": 89,
+      "selectionRemaining": 87,
+      "releaseRemaining": 87,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.04.27 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.08.11 10:00 ~ 2026.09.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "인제군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.08.20 09:00",
+      "announced": 166,
+      "received": 115,
+      "selected": 115,
+      "released": 115,
+      "selectionRemaining": 51,
+      "releaseRemaining": 51,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.07.08 09:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.08.18 09:00 ~ 2026.08.20 09:00"
+        }
+      ]
+    },
+    {
+      "region": "고성군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.10.06 12:00",
+      "announced": 86,
+      "received": 81,
+      "selected": 81,
+      "released": 79,
+      "selectionRemaining": 5,
+      "releaseRemaining": 7,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.05.26 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.21 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "양양군",
+      "short": "강원",
+      "closed": true,
+      "deadline": "2026.07.31 18:00",
+      "announced": 91,
+      "received": 91,
+      "selected": 91,
+      "released": 91,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.29 00:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "청주시",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.09.15 11:26",
+      "announced": 2250,
+      "received": 3238,
+      "selected": 2807,
+      "released": 2779,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.29 09:00 ~ 2026.02.09 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.18 10:00 ~ 2026.05.18 11:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.15 11:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "충주시",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.10.01 10:00",
+      "announced": 1020,
+      "received": 1228,
+      "selected": 1032,
+      "released": 1032,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.23 10:00 ~ 2026.03.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.19 15:30 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.30 14:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    },
+    {
+      "region": "제천시",
+      "short": "충북",
+      "closed": false,
+      "deadline": "2026.12.31 18:00",
+      "announced": 751,
+      "received": 873,
+      "selected": 751,
+      "released": 751,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.23 09:00 ~ 2026.05.26 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.15 10:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.14 09:00 ~ 2026.12.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "보은군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.10.06 10:01",
+      "announced": 140,
+      "received": 145,
+      "selected": 145,
+      "released": 145,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.07.08 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.10.06 10:00 ~ 2026.10.06 10:01"
+        }
+      ]
+    },
+    {
+      "region": "옥천군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.10.22 18:00",
+      "announced": 197,
+      "received": 198,
+      "selected": 198,
+      "released": 197,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 09:00 ~ 2026.02.09 10:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.16 14:00 ~ 2026.06.16 14:01"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.22 10:00 ~ 2026.10.22 11:00"
+        }
+      ]
+    },
+    {
+      "region": "영동군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.11.24 14:01",
+      "announced": 184,
+      "received": 194,
+      "selected": 179,
+      "released": 175,
+      "selectionRemaining": 5,
+      "releaseRemaining": 9,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.03.02 00:00 ~ 2026.09.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.11.24 14:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "증평군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.07.02 18:00",
+      "announced": 90,
+      "received": 90,
+      "selected": 90,
+      "released": 90,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.02 10:00 ~ 2026.10.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "진천군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.10.01 13:00",
+      "announced": 0,
+      "received": 680,
+      "selected": 531,
+      "released": 531,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.22 16:00 ~ 2026.05.14 17:30"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.09 16:00 ~ 2026.07.22 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.01 10:00 ~ 2026.12.31 12:00"
+        }
+      ]
+    },
+    {
+      "region": "괴산군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.09.03 11:00",
+      "announced": 162,
+      "received": 106,
+      "selected": 106,
+      "released": 106,
+      "selectionRemaining": 56,
+      "releaseRemaining": 56,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.26 09:00 ~ 2026.04.23 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.30 10:00 ~ 2026.06.15 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.01 10:00 ~ 2026.07.01 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.09.03 10:00 ~ 2026.09.03 11:00"
+        }
+      ]
+    },
+    {
+      "region": "음성군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.08.07 18:00",
+      "announced": 420,
+      "received": 502,
+      "selected": 502,
+      "released": 430,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.04.27 09:00 ~ 2026.06.29 15:50"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.29 09:00 ~ 2026.08.07 17:00"
+        }
+      ]
+    },
+    {
+      "region": "단양군",
+      "short": "충북",
+      "closed": true,
+      "deadline": "2026.09.09 10:10",
+      "announced": 158,
+      "received": 162,
+      "selected": 158,
+      "released": 158,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.26 09:00 ~ 2026.05.07 15:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.13 09:00 ~ 2026.05.27 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.09 09:00 ~ 2026.09.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "천안시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.06.23 10:08",
+      "announced": 1056,
+      "received": 1379,
+      "selected": 1317,
+      "released": 1312,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.25 10:00 ~ 2026.06.22 13:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.23 10:00 ~ 2026.06.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "공주시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.22 18:00",
+      "announced": 195,
+      "received": 463,
+      "selected": 458,
+      "released": 352,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.05.12 09:00 ~ 2026.08.12 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.18 10:00 ~ 2026.12.24 18:00"
+        }
+      ]
+    },
+    {
+      "region": "보령시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.07.31 18:00",
+      "announced": 300,
+      "received": 280,
+      "selected": 280,
+      "released": 276,
+      "selectionRemaining": 20,
+      "releaseRemaining": 24,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 13:00 ~ 2026.06.05 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.21 09:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "아산시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.02 18:00",
+      "announced": 1154,
+      "received": 1596,
+      "selected": 1285,
+      "released": 1282,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 10:00 ~ 2026.06.12 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.25 10:00 ~ 2026.07.16 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.27 10:00 ~ 2026.11.27 18:00"
+        }
+      ]
+    },
+    {
+      "region": "서산시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.08 18:00",
+      "announced": 580,
+      "received": 580,
+      "selected": 580,
+      "released": 580,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.20 10:00 ~ 2026.05.14 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.15 10:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.08 09:00 ~ 2026.10.08 18:00"
+        }
+      ]
+    },
+    {
+      "region": "논산시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.09.15 13:40",
+      "announced": 256,
+      "received": 387,
+      "selected": 309,
+      "released": 284,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.12 09:00 ~ 2026.04.20 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.20 09:00 ~ 2026.06.19 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.15 09:00 ~ 2026.10.08 18:00"
+        }
+      ]
+    },
+    {
+      "region": "계룡시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.12 18:00",
+      "announced": 257,
+      "received": 360,
+      "selected": 268,
+      "released": 258,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.04.30 10:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.15 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.08 14:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "당진시",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.11.10 18:00",
+      "announced": 721,
+      "received": 911,
+      "selected": 776,
+      "released": 774,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.24 09:00 ~ 2026.05.08 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 10:00 ~ 2026.08.27 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.10 15:00 ~ 2026.09.29 18:00"
+        }
+      ]
+    },
+    {
+      "region": "금산군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.01 18:00",
+      "announced": 215,
+      "received": 255,
+      "selected": 231,
+      "released": 201,
+      "selectionRemaining": 0,
+      "releaseRemaining": 14,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.06 09:00 ~ 2026.04.27 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.08.11 09:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.14 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "부여군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.07.15 18:00",
+      "announced": 300,
+      "received": 213,
+      "selected": 213,
+      "released": 197,
+      "selectionRemaining": 87,
+      "releaseRemaining": 103,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.05.08 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.12 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.15 09:00 ~ 2026.10.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "서천군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.08 09:01",
+      "announced": 146,
+      "received": 208,
+      "selected": 208,
+      "released": 135,
+      "selectionRemaining": 0,
+      "releaseRemaining": 11,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.03.04 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 10:00 ~ 2026.05.11 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.07 10:00 ~ 2026.10.07 18:00"
+        }
+      ]
+    },
+    {
+      "region": "청양군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.09.08 09:00",
+      "announced": 138,
+      "received": 141,
+      "selected": 141,
+      "released": 139,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.05.11 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.22 09:00 ~ 2026.08.10 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.25 09:00 ~ 2026.11.27 18:00"
+        }
+      ]
+    },
+    {
+      "region": "홍성군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.15 18:00",
+      "announced": 259,
+      "received": 424,
+      "selected": 424,
+      "released": 254,
+      "selectionRemaining": 0,
+      "releaseRemaining": 5,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.05.18 09:00 ~ 2026.06.26 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.10.12 10:00 ~ 2026.10.15 14:00"
+        }
+      ]
+    },
+    {
+      "region": "예산군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.09.21 16:00",
+      "announced": 270,
+      "received": 294,
+      "selected": 293,
+      "released": 224,
+      "selectionRemaining": 0,
+      "releaseRemaining": 46,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.23 09:00 ~ 2026.02.28 10:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.13 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.04 09:00 ~ 2026.11.27 18:00"
+        }
+      ]
+    },
+    {
+      "region": "태안군",
+      "short": "충남",
+      "closed": true,
+      "deadline": "2026.10.12 11:00",
+      "announced": 277,
+      "received": 275,
+      "selected": 256,
+      "released": 253,
+      "selectionRemaining": 21,
+      "releaseRemaining": 24,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.19 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.10.12 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "전주시",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.07.29 18:00",
+      "announced": 940,
+      "received": 1376,
+      "selected": 1376,
+      "released": 981,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.23 09:00 ~ 2026.06.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.15 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "군산시",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.11.23 18:00",
+      "announced": 774,
+      "received": 1157,
+      "selected": 1157,
+      "released": 785,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.11 09:00 ~ 2026.05.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.01 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.07 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "익산시",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.10.02 18:00",
+      "announced": 408,
+      "received": 896,
+      "selected": 404,
+      "released": 404,
+      "selectionRemaining": 4,
+      "releaseRemaining": 4,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.13 09:00 ~ 2026.02.25 12:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.15 09:00 ~ 2026.06.16 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.01 09:00 ~ 2026.10.02 18:00"
+        }
+      ]
+    },
+    {
+      "region": "정읍시",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.08.25 18:00",
+      "announced": 388,
+      "received": 483,
+      "selected": 483,
+      "released": 397,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.12 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.21 09:00 ~ 2026.05.26 09:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.18 09:00 ~ 2026.08.24 17:00"
+        }
+      ]
+    },
+    {
+      "region": "남원시",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.10.02 18:00",
+      "announced": 235,
+      "received": 375,
+      "selected": 238,
+      "released": 238,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:30 ~ 2026.03.24 14:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.04 10:30 ~ 2026.06.04 10:35"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.06 10:30 ~ 2026.07.07 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.09.29 09:00 ~ 2026.10.02 18:00"
+        }
+      ]
+    },
+    {
+      "region": "김제시",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.08.20 18:00",
+      "announced": 253,
+      "received": 384,
+      "selected": 272,
+      "released": 272,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.20 10:00 ~ 2026.04.21 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.15 10:00 ~ 2026.06.18 12:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.19 09:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "완주군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.10.30 18:00",
+      "announced": 305,
+      "received": 601,
+      "selected": 601,
+      "released": 275,
+      "selectionRemaining": 0,
+      "releaseRemaining": 30,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.24 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.07 09:00 ~ 2026.05.11 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.12 09:00 ~ 2026.10.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "진안군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.08.21 18:00",
+      "announced": 91,
+      "received": 93,
+      "selected": 93,
+      "released": 93,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.19 09:00 ~ 2026.05.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.01 09:00 ~ 2026.07.07 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.19 09:00 ~ 2026.08.21 18:00"
+        }
+      ]
+    },
+    {
+      "region": "무주군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.10.30 18:00",
+      "announced": 51,
+      "received": 67,
+      "selected": 67,
+      "released": 52,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.19 10:00 ~ 2026.05.01 12:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.03 10:00 ~ 2026.06.18 10:05"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.01 11:00 ~ 2026.10.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "장수군",
+      "short": "전북",
+      "closed": false,
+      "deadline": "2026.11.30 18:00",
+      "announced": 52,
+      "received": 61,
+      "selected": 51,
+      "released": 49,
+      "selectionRemaining": 1,
+      "releaseRemaining": 3,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.23 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.22 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "임실군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.07.09 12:00",
+      "announced": 94,
+      "received": 101,
+      "selected": 101,
+      "released": 101,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.24 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.08 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "순창군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.07.07 18:00",
+      "announced": 85,
+      "received": 85,
+      "selected": 85,
+      "released": 85,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.24 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.07 09:00 ~ 2026.12.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "고창군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.07.08 18:00",
+      "announced": 96,
+      "received": 118,
+      "selected": 117,
+      "released": 95,
+      "selectionRemaining": 0,
+      "releaseRemaining": 1,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.20 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.03 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "부안군",
+      "short": "전북",
+      "closed": true,
+      "deadline": "2026.10.14 18:00",
+      "announced": 30,
+      "received": 210,
+      "selected": 210,
+      "released": 129,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.23 09:00 ~ 2026.06.26 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.06 09:00 ~ 2026.09.16 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.07 09:00 ~ 2026.10.14 18:00"
+        }
+      ]
+    },
+    {
+      "region": "목포시",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.10.19 09:00",
+      "announced": 201,
+      "received": 272,
+      "selected": 271,
+      "released": 181,
+      "selectionRemaining": 0,
+      "releaseRemaining": 20,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.20 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.14 09:00 ~ 2026.11.27 18:00"
+        }
+      ]
+    },
+    {
+      "region": "여수시",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.02 17:30",
+      "announced": 950,
+      "received": 1077,
+      "selected": 1077,
+      "released": 1077,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 10:00 ~ 2026.02.27 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.26 10:00 ~ 2026.08.12 15:23"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.14 10:00 ~ 2026.09.02 17:30"
+        }
+      ]
+    },
+    {
+      "region": "순천시",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.04 10:01",
+      "announced": 494,
+      "received": 565,
+      "selected": 494,
+      "released": 494,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 09:00 ~ 2026.02.25 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.04 10:00 ~ 2026.09.04 10:01"
+        }
+      ]
+    },
+    {
+      "region": "나주시",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.11.02 18:00",
+      "announced": 280,
+      "received": 479,
+      "selected": 479,
+      "released": 389,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.23 09:00 ~ 2026.05.19 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.15 09:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.19 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "광양시",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.10.27 09:45",
+      "announced": 550,
+      "received": 655,
+      "selected": 560,
+      "released": 536,
+      "selectionRemaining": 0,
+      "releaseRemaining": 14,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.03.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.24 10:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.26 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "담양군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.07.28 18:00",
+      "announced": 75,
+      "received": 163,
+      "selected": 163,
+      "released": 125,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.10 09:00 ~ 2026.02.11 17:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.10 10:00 ~ 2026.06.10 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.27 10:00 ~ 2026.07.28 18:00"
+        }
+      ]
+    },
+    {
+      "region": "곡성군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.29 09:10",
+      "announced": 89,
+      "received": 129,
+      "selected": 96,
+      "released": 91,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.22 09:00 ~ 2026.05.29 09:10"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.15 09:00 ~ 2026.07.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.29 09:00 ~ 2026.09.29 12:00"
+        }
+      ]
+    },
+    {
+      "region": "구례군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.07 18:00",
+      "announced": 70,
+      "received": 101,
+      "selected": 99,
+      "released": 86,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.07 09:00 ~ 2026.09.07 18:00"
+        }
+      ]
+    },
+    {
+      "region": "고흥군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.03 11:59",
+      "announced": 110,
+      "received": 201,
+      "selected": 127,
+      "released": 122,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.09.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.03 09:00 ~ 2026.12.01 18:00"
+        }
+      ]
+    },
+    {
+      "region": "보성군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.07.10 10:00",
+      "announced": 20,
+      "received": 160,
+      "selected": 160,
+      "released": 123,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.07.09 09:00 ~ 2026.07.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "화순군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.17 12:00",
+      "announced": 115,
+      "received": 188,
+      "selected": 184,
+      "released": 115,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 09:00 ~ 2026.04.29 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.12 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.17 10:00 ~ 2026.09.17 12:00"
+        }
+      ]
+    },
+    {
+      "region": "장흥군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.08.31 18:00",
+      "announced": 153,
+      "received": 210,
+      "selected": 210,
+      "released": 153,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.04.16 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.24 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.10 09:00 ~ 2026.08.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "강진군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.05.28 10:36",
+      "announced": 80,
+      "received": 82,
+      "selected": 81,
+      "released": 81,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.02.19 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.26 09:00 ~ 2026.05.28 10:36"
+        }
+      ]
+    },
+    {
+      "region": "해남군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.18 09:03",
+      "announced": 551,
+      "received": 402,
+      "selected": 371,
+      "released": 361,
+      "selectionRemaining": 180,
+      "releaseRemaining": 190,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.27 14:00 ~ 2026.06.02 15:29"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.18 09:00 ~ 2026.09.18 09:03"
+        }
+      ]
+    },
+    {
+      "region": "영암군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.14 10:06",
+      "announced": 90,
+      "received": 164,
+      "selected": 97,
+      "released": 94,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.19 09:00 ~ 2026.09.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.14 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "무안군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.10.30 18:00",
+      "announced": 340,
+      "received": 389,
+      "selected": 387,
+      "released": 235,
+      "selectionRemaining": 0,
+      "releaseRemaining": 105,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.03.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.27 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.29 10:00 ~ 2026.10.01 18:00"
+        }
+      ]
+    },
+    {
+      "region": "함평군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.08.28 18:00",
+      "announced": 208,
+      "received": 175,
+      "selected": 175,
+      "released": 175,
+      "selectionRemaining": 33,
+      "releaseRemaining": 33,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.28 10:00 ~ 2026.06.10 11:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.08.28 09:00 ~ 2026.10.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "영광군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.06.22 13:10",
+      "announced": 92,
+      "received": 320,
+      "selected": 320,
+      "released": 319,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.04.20 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.08 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "장성군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.10.30 18:00",
+      "announced": 238,
+      "received": 246,
+      "selected": 246,
+      "released": 232,
+      "selectionRemaining": 0,
+      "releaseRemaining": 6,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.03.20 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.08 09:00 ~ 2026.06.19 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.06.22 09:00 ~ 2026.07.31 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.09.29 11:00 ~ 2026.10.02 15:00"
+        }
+      ]
+    },
+    {
+      "region": "완도군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.23 18:00",
+      "announced": 96,
+      "received": 126,
+      "selected": 112,
+      "released": 93,
+      "selectionRemaining": 0,
+      "releaseRemaining": 3,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.13 09:00 ~ 2026.09.01 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.21 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "진도군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.09.04 11:00",
+      "announced": 140,
+      "received": 148,
+      "selected": 144,
+      "released": 144,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.08.12 10:00 ~ 2026.11.12 23:59"
+        }
+      ]
+    },
+    {
+      "region": "신안군",
+      "short": "전남",
+      "closed": true,
+      "deadline": "2026.08.06 16:00",
+      "announced": 120,
+      "received": 130,
+      "selected": 130,
+      "released": 129,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.27 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.04 14:00 ~ 2026.08.06 16:00"
+        }
+      ]
+    },
+    {
+      "region": "포항시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.08.07 18:00",
+      "announced": 1084,
+      "received": 1666,
+      "selected": 1666,
+      "released": 1238,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.12 10:00 ~ 2026.05.06 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.08 10:00 ~ 2026.06.12 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.07 10:00 ~ 2026.08.07 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.08.08 10:00 ~ 2026.09.29 18:00"
+        }
+      ]
+    },
+    {
+      "region": "경주시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.08.17 18:00",
+      "announced": 1161,
+      "received": 1177,
+      "selected": 1177,
+      "released": 1177,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 10:00 ~ 2026.04.15 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.18 10:00 ~ 2026.07.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.12 09:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "김천시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.10.16 18:00",
+      "announced": 1188,
+      "received": 1187,
+      "selected": 1187,
+      "released": 1186,
+      "selectionRemaining": 1,
+      "releaseRemaining": 2,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.07.27 14:00 ~ 2026.12.25 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "-"
+        }
+      ]
+    },
+    {
+      "region": "안동시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.11.19 10:00",
+      "announced": 1020,
+      "received": 1098,
+      "selected": 1053,
+      "released": 983,
+      "selectionRemaining": 0,
+      "releaseRemaining": 37,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 10:00 ~ 2026.03.05 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.07 10:00 ~ 2026.05.07 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.03 10:00 ~ 2026.07.06 14:40"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.11.19 10:00 ~ 2026.11.19 18:00"
+        }
+      ]
+    },
+    {
+      "region": "구미시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.10.01 18:00",
+      "announced": 1300,
+      "received": 1322,
+      "selected": 1322,
+      "released": 1322,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 10:00 ~ 2026.03.05 15:30"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.05 10:00 ~ 2026.08.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.01 10:00 ~ 2026.10.01 18:00"
+        }
+      ]
+    },
+    {
+      "region": "영주시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.10.15 16:01",
+      "announced": 70,
+      "received": 573,
+      "selected": 479,
+      "released": 479,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.10.15 16:00 ~ 2026.10.20 18:00"
+        }
+      ]
+    },
+    {
+      "region": "영천시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.09.30 18:00",
+      "announced": 728,
+      "received": 443,
+      "selected": 442,
+      "released": 428,
+      "selectionRemaining": 286,
+      "releaseRemaining": 300,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 10:00 ~ 2026.05.11 09:59"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 10:00 ~ 2026.09.08 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.15 10:00 ~ 2026.12.10 18:00"
+        }
+      ]
+    },
+    {
+      "region": "상주시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.09.07 10:26",
+      "announced": 600,
+      "received": 599,
+      "selected": 599,
+      "released": 579,
+      "selectionRemaining": 1,
+      "releaseRemaining": 21,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.09.07 10:00 ~ 2026.09.07 10:26"
+        }
+      ]
+    },
+    {
+      "region": "문경시",
+      "short": "경북",
+      "closed": false,
+      "deadline": "2026.11.30 11:00",
+      "announced": 302,
+      "received": 285,
+      "selected": 229,
+      "released": 229,
+      "selectionRemaining": 73,
+      "releaseRemaining": 73,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.11.30 10:00 ~ 2026.11.30 11:00"
+        }
+      ]
+    },
+    {
+      "region": "경산시",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.07.10 18:00",
+      "announced": 750,
+      "received": 906,
+      "selected": 906,
+      "released": 750,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 10:00 ~ 2026.07.09 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.10 10:00 ~ 2026.07.16 18:00"
+        }
+      ]
+    },
+    {
+      "region": "의성군",
+      "short": "경북",
+      "closed": false,
+      "deadline": "2026.12.11 23:59",
+      "announced": 205,
+      "received": 233,
+      "selected": 204,
+      "released": 198,
+      "selectionRemaining": 1,
+      "releaseRemaining": 7,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.05.03 23:59"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.05.13 16:50"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.04 09:00 ~ 2026.09.04 17:00"
+        }
+      ]
+    },
+    {
+      "region": "청송군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.10.16 10:00",
+      "announced": 150,
+      "received": 156,
+      "selected": 156,
+      "released": 156,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.03.06 11:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 10:00 ~ 2026.05.11 11:37"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.10 10:00 ~ 2026.07.10 10:02"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.10.16 10:00 ~ 2026.10.16 10:00"
+        }
+      ]
+    },
+    {
+      "region": "영양군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.08.18 15:03",
+      "announced": 79,
+      "received": 92,
+      "selected": 91,
+      "released": 91,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.19 09:00 ~ 2026.03.04 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.07.15 15:10"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.18 15:00 ~ 2026.08.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "영덕군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.10.21 10:21",
+      "announced": 126,
+      "received": 146,
+      "selected": 138,
+      "released": 138,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 10:00 ~ 2026.04.17 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.18 10:00 ~ 2026.07.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.26 10:00 ~ 2026.12.04 18:00"
+        }
+      ]
+    },
+    {
+      "region": "청도군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.07.08 09:00",
+      "announced": 200,
+      "received": 204,
+      "selected": 203,
+      "released": 203,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.06 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.13 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.02 09:00 ~ 2026.12.07 18:00"
+        }
+      ]
+    },
+    {
+      "region": "고령군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.09.01 16:00",
+      "announced": 118,
+      "received": 152,
+      "selected": 151,
+      "released": 133,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 10:00 ~ 2026.05.13 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.27 10:00 ~ 2026.06.19 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.25 10:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "성주군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.08.28 12:00",
+      "announced": 214,
+      "received": 230,
+      "selected": 230,
+      "released": 230,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 09:00 ~ 2026.05.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 09:00 ~ 2026.07.31 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.25 10:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "칠곡군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.07.01 18:00",
+      "announced": 293,
+      "received": 293,
+      "selected": 293,
+      "released": 293,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.05 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.18 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.01 09:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "예천군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.10.26 18:00",
+      "announced": 120,
+      "received": 348,
+      "selected": 348,
+      "released": 348,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.10.26 10:00 ~ 2026.10.26 18:00"
+        }
+      ]
+    },
+    {
+      "region": "봉화군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.08.13 15:00",
+      "announced": 50,
+      "received": 150,
+      "selected": 150,
+      "released": 142,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.12 09:00 ~ 2026.06.07 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.08 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.22 10:00 ~ 2026.12.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "울진군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.11.16 14:02",
+      "announced": 244,
+      "received": 289,
+      "selected": 256,
+      "released": 228,
+      "selectionRemaining": 0,
+      "releaseRemaining": 16,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.11.16 14:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "울릉군",
+      "short": "경북",
+      "closed": true,
+      "deadline": "2026.11.17 18:00",
+      "announced": 144,
+      "received": 213,
+      "selected": 142,
+      "released": 128,
+      "selectionRemaining": 2,
+      "releaseRemaining": 16,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 09:00 ~ 2026.04.15 10:30"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.01 10:00 ~ 2026.10.30 10:02"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.11.17 10:00 ~ 2026.11.17 18:00"
+        }
+      ]
+    },
+    {
+      "region": "창원시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.10.29 09:40",
+      "announced": 4300,
+      "received": 4286,
+      "selected": 4285,
+      "released": 4231,
+      "selectionRemaining": 15,
+      "releaseRemaining": 69,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.05.21 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.22 10:00 ~ 2026.09.07 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.11 10:00 ~ 2026.12.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "진주시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.09.21 09:10",
+      "announced": 950,
+      "received": 1049,
+      "selected": 980,
+      "released": 974,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 14:00 ~ 2026.04.27 11:30"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.20 09:00 ~ 2026.05.21 10:50"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.21 09:00 ~ 2026.09.21 09:10"
+        }
+      ]
+    },
+    {
+      "region": "통영시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.10.14 15:00",
+      "announced": 320,
+      "received": 431,
+      "selected": 299,
+      "released": 299,
+      "selectionRemaining": 21,
+      "releaseRemaining": 21,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 15:00 ~ 2026.04.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.11 14:00 ~ 2026.09.18 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.30 15:00 ~ 2026.12.24 18:00"
+        }
+      ]
+    },
+    {
+      "region": "사천시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.11.17 10:00",
+      "announced": 375,
+      "received": 419,
+      "selected": 386,
+      "released": 358,
+      "selectionRemaining": 0,
+      "releaseRemaining": 17,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.05.14 23:59"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.15 10:00 ~ 2026.07.06 13:17"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.09 10:00 ~ 2026.09.09 10:10"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.11.17 10:00 ~ 2026.11.27 17:00"
+        }
+      ]
+    },
+    {
+      "region": "김해시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.10.08 16:40",
+      "announced": 2495,
+      "received": 2470,
+      "selected": 2469,
+      "released": 2442,
+      "selectionRemaining": 26,
+      "releaseRemaining": 53,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.28 09:00 ~ 2026.04.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.18 14:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.07.02 14:00 ~ 2026.08.06 16:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.09.10 10:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    },
+    {
+      "region": "밀양시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.09.29 15:50",
+      "announced": 342,
+      "received": 348,
+      "selected": 348,
+      "released": 348,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 10:00 ~ 2026.04.15 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.16 09:00 ~ 2026.07.20 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.29 09:00 ~ 2026.12.31 18:00"
+        }
+      ]
+    },
+    {
+      "region": "거제시",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.10.16 18:00",
+      "announced": 1600,
+      "received": 1088,
+      "selected": 1060,
+      "released": 1060,
+      "selectionRemaining": 540,
+      "releaseRemaining": 540,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.29 10:00 ~ 2026.05.31 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.04 11:00 ~ 2026.08.23 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.27 11:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "양산시",
+      "short": "경남",
+      "closed": false,
+      "deadline": "2026.12.11 18:00",
+      "announced": 1576,
+      "received": 1551,
+      "selected": 1551,
+      "released": 1550,
+      "selectionRemaining": 25,
+      "releaseRemaining": 26,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 13:00 ~ 2026.05.01 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.19 10:00 ~ 2026.09.01 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.17 10:00 ~ 2026.11.20 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.11.26 10:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "의령군",
+      "short": "경남",
+      "closed": false,
+      "deadline": "2026.11.30 18:00",
+      "announced": 86,
+      "received": 91,
+      "selected": 91,
+      "released": 90,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.30 09:00 ~ 2026.06.17 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.21 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "함안군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.09.10 16:30",
+      "announced": 186,
+      "received": 155,
+      "selected": 150,
+      "released": 147,
+      "selectionRemaining": 36,
+      "releaseRemaining": 39,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.09 10:00 ~ 2026.08.02 10:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.09.07 10:00 ~ 2026.09.10 16:30"
+        }
+      ]
+    },
+    {
+      "region": "창녕군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.08.03 11:00",
+      "announced": 206,
+      "received": 163,
+      "selected": 157,
+      "released": 153,
+      "selectionRemaining": 49,
+      "releaseRemaining": 53,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.03 09:00 ~ 2026.04.02 13:38"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.06 09:00 ~ 2026.05.07 11:20"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.03 09:00 ~ 2026.09.30 09:00"
+        }
+      ]
+    },
+    {
+      "region": "고성군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.11.16 18:00",
+      "announced": 214,
+      "received": 151,
+      "selected": 148,
+      "released": 142,
+      "selectionRemaining": 66,
+      "releaseRemaining": 72,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.06 10:00 ~ 2026.04.20 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.04.21 10:00 ~ 2026.06.22 17:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.29 11:00 ~ 2026.10.30 18:00"
+        },
+        {
+          "kind": "추경3차",
+          "period": "2026.11.16 10:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    },
+    {
+      "region": "남해군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.09.01 09:05",
+      "announced": 100,
+      "received": 101,
+      "selected": 97,
+      "released": 97,
+      "selectionRemaining": 3,
+      "releaseRemaining": 3,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.01 09:00 ~ 2026.07.20 15:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.01 09:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    },
+    {
+      "region": "하동군",
+      "short": "경남",
+      "closed": false,
+      "deadline": "2026.12.18 18:00",
+      "announced": 160,
+      "received": 119,
+      "selected": 119,
+      "released": 119,
+      "selectionRemaining": 41,
+      "releaseRemaining": 41,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.29 09:00 ~ 2026.08.11 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.11.27 09:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    },
+    {
+      "region": "산청군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.09.29 10:19",
+      "announced": 190,
+      "received": 106,
+      "selected": 104,
+      "released": 103,
+      "selectionRemaining": 86,
+      "releaseRemaining": 87,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.06 09:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.07.30 10:00 ~ 2026.08.13 11:50"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.09.29 10:00 ~ 2026.11.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "함양군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.09.21 18:00",
+      "announced": 184,
+      "received": 96,
+      "selected": 96,
+      "released": 96,
+      "selectionRemaining": 88,
+      "releaseRemaining": 88,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.02 09:00 ~ 2026.04.06 15:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.06.04 10:00 ~ 2026.06.30 18:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.08.14 10:00 ~ 2026.12.11 18:00"
+        }
+      ]
+    },
+    {
+      "region": "거창군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.07.07 18:00",
+      "announced": 60,
+      "received": 135,
+      "selected": 135,
+      "released": 135,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.04 10:00 ~ 2026.02.13 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.19 10:00 ~ 2026.06.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "합천군",
+      "short": "경남",
+      "closed": true,
+      "deadline": "2026.10.12 11:00",
+      "announced": 133,
+      "received": 208,
+      "selected": 136,
+      "released": 126,
+      "selectionRemaining": 0,
+      "releaseRemaining": 7,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.01.29 09:30 ~ 2026.04.06 15:45"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.05.12 10:00 ~ 2026.05.12 11:00"
+        },
+        {
+          "kind": "추경2차",
+          "period": "2026.10.12 11:00 ~ 2026.10.12 11:00"
+        }
+      ]
+    },
+    {
+      "region": "제주특별자치도",
+      "short": "제주",
+      "closed": true,
+      "deadline": "2026.08.12 18:00",
+      "announced": 4200,
+      "received": 4929,
+      "selected": 4802,
+      "released": 4802,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.02.10 14:00 ~ 2026.05.29 18:00"
+        },
+        {
+          "kind": "추경1차",
+          "period": "2026.08.06 14:00 ~ 2026.09.30 18:00"
+        }
+      ]
+    },
+    {
+      "region": "한국환경공단",
+      "short": "공단",
+      "closed": false,
+      "deadline": "2026.12.18 18:00",
+      "announced": 30000,
+      "received": 71019,
+      "selected": 62652,
+      "released": 56359,
+      "selectionRemaining": 0,
+      "releaseRemaining": 0,
+      "notices": [
+        {
+          "kind": "본공고",
+          "period": "2026.07.01 14:00 ~ 2026.12.18 18:00"
+        }
+      ]
+    }
+  ]
+}

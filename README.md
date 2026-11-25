@@ -38,3 +38,11 @@ tail -f ~/Library/Logs/tesla-kr-lineup.log                   # 로그
 매일 Tesla 가격 API와 뉴스를 확인하고, 사람이 볼 변경이 있으면 `auto/lineup-refresh` PR을 연다.
 조회 실패(429 등)는 PR 없이 workflow 경고로만 남긴다.
 `TRIM_CODE_MAP`은 앱의 `price_sync_service.dart`와 같이 맞춘다.
+
+## 보조금 현황 (`subsidy_status.json`)
+
+`scripts/check-subsidy.mjs` 가 ev.or.kr "구매보조금 지급 현황" 에서 지역별 전기승용
+공고·접수·선정·출고·잔여 대수를 읽는다. 하루 두 번 Actions(`subsidy-check.yml`)로,
+그리고 맥 launchd 작업(`run-homepage-local.sh`) 끝에 한 번 더 돈다.
+공공 데이터 사본이라 변경이 있으면 리뷰 없이 main 에 바로 커밋한다.
+일부 지역만 읽히면 파일을 덮어쓰지 않는다.

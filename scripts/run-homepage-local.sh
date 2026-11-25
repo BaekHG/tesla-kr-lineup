@@ -45,4 +45,18 @@ $FINDINGS" > /dev/null
   fi
   echo "review issue updated"
 fi
+# 보조금 현황 — Actions 가 막혀도 맥에서 한 번 더 받는다. 실패해도 라인업 결과엔 영향 없음.
+SOUT="$(mktemp)"
+if GITHUB_OUTPUT="$SOUT" node scripts/check-subsidy.mjs; then
+  if grep -q '^has_changes=true' "$SOUT"; then
+    git add subsidy_status.json
+    git commit -q -m "auto: 보조금 현황 갱신"
+    git pull -q --rebase && git push -q
+    echo "subsidy pushed"
+  fi
+else
+  git checkout -q -- subsidy_status.json 2>/dev/null || true
+  echo "subsidy scrape failed"
+fi
+rm -f "$SOUT"
 echo "done auto=$AUTO review=$REVIEW"
