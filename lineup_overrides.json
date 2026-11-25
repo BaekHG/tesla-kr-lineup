@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastVerified": "2026-07-22",
-  "notes": "Tesla Korea 2026-07 lineup. Cybertruck is sold (launched 2025-08, delivered from 2025-11) but missing from public pricing API. Model S/X were discontinued in Korea 2026-04 when Model Y L replaced them as the flagship.",
+  "lastVerified": "2026-11-25",
+  "notes": "Tesla Korea 2026-11 lineup. Cybertruck is missing from the public pricing API, so it is added here. Production ends mid-2027 (Musk, 2026-11-06) and only Cyberbeast is orderable now. Model S/X were discontinued in Korea 2026-04 when Model Y L replaced them as the flagship.",
   "add": [
     {
       "id": "cybertruck",
@@ -33,5 +33,12 @@
   "discontinuedNote": {
     "models": "2026년 4월 국내 판매 종료 (Model Y L로 대체)",
     "modelx": "2026년 4월 국내 판매 종료 (Model Y L로 대체)"
+  },
+  "hideTrims": ["cybertruck_awd"],
+  "trimNotes": {
+    "cybertruck_awd": "2026년 11월 주문 종료 (사이버비스트만 판매)"
+  },
+  "modelNotices": {
+    "cybertruck": "2027년 중반 생산 종료 예정"
   }
 }
