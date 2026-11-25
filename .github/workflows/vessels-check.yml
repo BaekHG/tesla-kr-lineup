@@ -1,0 +1,44 @@
+name: Tesla Vessels
+
+on:
+  schedule:
+    # 3시간마다 (통관·반출 진행률이 하루에도 계속 바뀜)
+    - cron: "15 */3 * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "scripts/check-vessels.mjs"
+      - ".github/workflows/vessels-check.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vessels
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+      - run: npm ci --no-audit --no-fund
+      - name: Scan UNI-PASS
+        id: scan
+        env:
+          CUSTOMS_KEY_CARGO: ${{ secrets.CUSTOMS_KEY_CARGO }}
+        run: node scripts/check-vessels.mjs
+      # 세관 공개 데이터 사본이라 리뷰 없이 main 에 바로 반영.
+      - name: Commit if changed
+        if: steps.scan.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vessels.json
+          git commit -m "auto: 테슬라 운반선 현황 갱신"
+          git pull --rebase
+          git push

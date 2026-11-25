@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "source": "UNI-PASS 화물통관진행정보",
+  "updatedAt": "2026-11-25T09:02:50.598Z",
+  "vessels": [
+    {
+      "mrn": "26GLVSP397I",
+      "ship": "GLOVIS TRINITY",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-11-20",
+      "totalCars": 3142,
+      "cleared": 3142,
+      "released": 2373,
+      "models": [
+        {
+          "model": "모델 Y RWD",
+          "count": 2239
+        },
+        {
+          "model": "모델 3 RWD",
+          "count": 654
+        },
+        {
+          "model": "모델 3 퍼포먼스",
+          "count": 249
+        }
+      ],
+      "lastEventAt": "20261125175724"
+    },
+    {
+      "mrn": "26GLVSP389I",
+      "ship": "GLOVIS SONIC",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-11-12",
+      "totalCars": 2587,
+      "cleared": 2587,
+      "released": 2587,
+      "models": [
+        {
+          "model": "모델 Y L",
+          "count": 2304
+        },
+        {
+          "model": "모델 3 RWD",
+          "count": 279
+        },
+        {
+          "model": "모델 Y RWD",
+          "count": 4
+        }
+      ],
+      "lastEventAt": "20261119164808"
+    },
+    {
+      "mrn": "26GLVSP380I",
+      "ship": "DONG-A GLAUCOS",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-11-06",
+      "totalCars": 4147,
+      "cleared": 4147,
+      "released": 4147,
+      "models": [
+        {
+          "model": "모델 Y 롱레인지 AWD",
+          "count": 1877
+        },
+        {
+          "model": "모델 Y RWD",
+          "count": 1492
+        },
+        {
+          "model": "모델 Y L",
+          "count": 778
+        }
+      ],
+      "lastEventAt": "20261113161634"
+    },
+    {
+      "mrn": "26GLVSP376I",
+      "ship": "RCC AMSTERDAM",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-10-31",
+      "totalCars": 850,
+      "cleared": 850,
+      "released": 850,
+      "models": [
+        {
+          "model": "모델 Y RWD",
+          "count": 850
+        }
+      ],
+      "lastEventAt": "20261104154717"
+    },
+    {
+      "mrn": "26GLVSP373I",
+      "ship": "GLOVIS CAPTAIN",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-10-26",
+      "totalCars": 1000,
+      "cleared": 1000,
+      "released": 1000,
+      "models": [
+        {
+          "model": "모델 Y L",
+          "count": 1000
+        }
+      ],
+      "lastEventAt": "20261102180641"
+    },
+    {
+      "mrn": "26GLVSP367I",
+      "ship": "G POSEIDON",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-10-22",
+      "totalCars": 3005,
+      "cleared": 3005,
+      "released": 3005,
+      "models": [
+        {
+          "model": "모델 Y RWD",
+          "count": 3005
+        }
+      ],
+      "lastEventAt": "20261029171734"
+    },
+    {
+      "mrn": "26GLVSP356I",
+      "ship": "GLOVIS SPRING",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-10-17",
+      "totalCars": 2993,
+      "cleared": 2993,
+      "released": 2993,
+      "models": [
+        {
+          "model": "모델 Y RWD",
+          "count": 2993
+        }
+      ],
+      "lastEventAt": "20261021162728"
+    }
+  ]
+}

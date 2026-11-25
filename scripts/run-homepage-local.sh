@@ -59,4 +59,20 @@ else
   echo "subsidy scrape failed"
 fi
 rm -f "$SOUT"
+# 테슬라 운반선 — Actions 가 막혀도 맥에서 한 번 더. 키는 ~/.tesla-savings.env.
+if [[ -f "$HOME/.tesla-savings.env" ]]; then
+  VOUT="$(mktemp)"
+  if (set -a; source "$HOME/.tesla-savings.env"; GITHUB_OUTPUT="$VOUT" node scripts/check-vessels.mjs); then
+    if grep -q '^has_changes=true' "$VOUT"; then
+      git add vessels.json
+      git commit -q -m "auto: 테슬라 운반선 현황 갱신"
+      git pull -q --rebase && git push -q
+      echo "vessels pushed"
+    fi
+  else
+    git checkout -q -- vessels.json 2>/dev/null || true
+    echo "vessels scan failed"
+  fi
+  rm -f "$VOUT"
+fi
 echo "done auto=$AUTO review=$REVIEW"
