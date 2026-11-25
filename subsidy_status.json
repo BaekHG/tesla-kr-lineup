@@ -3,7 +3,7 @@
   "source": "https://ev.or.kr/nportal/buySupprt/initSubsidyPaymentCheckAction.do",
   "year": 2026,
   "carType": "전기승용",
-  "updatedAt": "2026-11-25T06:43:05.503Z",
+  "updatedAt": "2026-11-25T09:20:16.521Z",
   "regions": [
     {
       "region": "서울특별시",
@@ -99,7 +99,7 @@
       "announced": 9036,
       "received": 9151,
       "selected": 9124,
-      "released": 9110,
+      "released": 9111,
       "selectionRemaining": 0,
       "releaseRemaining": 0,
       "notices": [
@@ -639,11 +639,11 @@
       "closed": true,
       "deadline": "2026.11.06 16:30",
       "announced": 4234,
-      "received": 4634,
-      "selected": 4262,
-      "released": 4129,
+      "received": 4631,
+      "selected": 4261,
+      "released": 4133,
       "selectionRemaining": 0,
-      "releaseRemaining": 105,
+      "releaseRemaining": 101,
       "notices": [
         {
           "kind": "본공고",
@@ -827,9 +827,9 @@
       "announced": 1445,
       "received": 1224,
       "selected": 1045,
-      "released": 1028,
+      "released": 1029,
       "selectionRemaining": 400,
-      "releaseRemaining": 417,
+      "releaseRemaining": 416,
       "notices": [
         {
           "kind": "본공고",
@@ -2807,9 +2807,9 @@
       "announced": 238,
       "received": 246,
       "selected": 246,
-      "released": 232,
+      "released": 233,
       "selectionRemaining": 0,
-      "releaseRemaining": 6,
+      "releaseRemaining": 5,
       "notices": [
         {
           "kind": "본공고",
@@ -3083,11 +3083,11 @@
       "closed": true,
       "deadline": "2026.09.07 10:26",
       "announced": 600,
-      "received": 599,
-      "selected": 599,
-      "released": 579,
-      "selectionRemaining": 1,
-      "releaseRemaining": 21,
+      "received": 598,
+      "selected": 598,
+      "released": 578,
+      "selectionRemaining": 2,
+      "releaseRemaining": 22,
       "notices": [
         {
           "kind": "본공고",
@@ -3101,7 +3101,7 @@
       "closed": false,
       "deadline": "2026.11.30 11:00",
       "announced": 302,
-      "received": 285,
+      "received": 284,
       "selected": 229,
       "released": 229,
       "selectionRemaining": 73,
@@ -3399,9 +3399,9 @@
       "announced": 244,
       "received": 289,
       "selected": 256,
-      "released": 228,
+      "released": 229,
       "selectionRemaining": 0,
-      "releaseRemaining": 16,
+      "releaseRemaining": 15,
       "notices": [
         {
           "kind": "본공고",
@@ -3417,9 +3417,9 @@
       "announced": 144,
       "received": 213,
       "selected": 142,
-      "released": 128,
+      "released": 129,
       "selectionRemaining": 2,
-      "releaseRemaining": 16,
+      "releaseRemaining": 15,
       "notices": [
         {
           "kind": "본공고",
@@ -3521,9 +3521,9 @@
       "announced": 375,
       "received": 419,
       "selected": 386,
-      "released": 358,
+      "released": 359,
       "selectionRemaining": 0,
-      "releaseRemaining": 17,
+      "releaseRemaining": 16,
       "notices": [
         {
           "kind": "본공고",
@@ -3810,9 +3810,9 @@
       "deadline": "2026.09.29 10:19",
       "announced": 190,
       "received": 106,
-      "selected": 104,
+      "selected": 105,
       "released": 103,
-      "selectionRemaining": 86,
+      "selectionRemaining": 85,
       "releaseRemaining": 87,
       "notices": [
         {
@@ -3931,9 +3931,9 @@
       "closed": false,
       "deadline": "2026.12.18 18:00",
       "announced": 30000,
-      "received": 71020,
-      "selected": 62652,
-      "released": 56359,
+      "received": 71001,
+      "selected": 62868,
+      "released": 56392,
       "selectionRemaining": 0,
       "releaseRemaining": 0,
       "notices": [
