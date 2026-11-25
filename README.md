@@ -53,3 +53,10 @@ tail -f ~/Library/Logs/tesla-kr-lineup.log                   # 로그
 찾는다. 글로비스 평택 수입 MRN(`26GLVSP###I`)이 순서대로 붙는 걸 이용해 마지막 번호 뒤를 훑고,
 상하이 선적 `(TESLA) MOTOR VEHICLES` 묶음만 합친다. 차종은 세관 신고 1대당 무게로 나눈다.
 3시간마다 Actions(`vessels-check.yml`, secret `CUSTOMS_KEY_CARGO`) + 맥 launchd 에서 돈다.
+
+## Oracle 서버
+
+`scripts/run-server.sh vessels|subsidy` 를 Oracle A1(arm64) cron 이 돌린다. 매번 origin/main 으로
+맞추고(스크립트 수정 자동 반영) Playwright 공식 Docker 이미지에서 CPU 1개·메모리 2GB 로 실행한다.
+키는 서버의 `~/.tesla-kr-lineup.env`, push 는 쓰기 권한 deploy key(`oracle-a1 bot`).
+Actions 는 서버가 멈췄을 때를 위한 예비로 계속 돈다. tesla.com 확인은 데이터센터 IP 가 막혀서 맥에서만.
