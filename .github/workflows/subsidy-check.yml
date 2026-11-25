@@ -1,0 +1,43 @@
+name: Subsidy Status
+
+on:
+  schedule:
+    # 매일 09:00, 15:00 KST
+    - cron: "0 0,6 * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "scripts/check-subsidy.mjs"
+      - ".github/workflows/subsidy-check.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: subsidy
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: Scrape ev.or.kr
+        id: scrape
+        run: node scripts/check-subsidy.mjs
+      # 공공 데이터 사본이라 리뷰 없이 main 에 바로 반영.
+      - name: Commit if changed
+        if: steps.scrape.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add subsidy_status.json
+          git commit -m "auto: 보조금 현황 갱신"
+          git pull --rebase
+          git push
