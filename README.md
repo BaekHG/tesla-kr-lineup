@@ -16,6 +16,23 @@
 
 앱은 fetch 실패 시 조용히 폴백 (bundled JSON만 사용).
 
+## 홈페이지 확인 (`scripts/check-homepage.mjs`, 맥에서 실행)
+
+tesla.com/ko_kr 주문 페이지를 실제 Chrome 으로 열어 트림 이름·가격·선택 가능 여부를 읽는다.
+가격 API 에 없는 사이버트럭도 여기서 잡힌다.
+
+- override 가 들고 있는 트림 가격, 주문 막힘/다시 열림 → 확인되면 바로 main 에 push
+- 처음 보는 트림, 페이지 못 읽음, 단종 모델 주문 재개, API 와 가격 불일치 → `[homepage] 라인업 확인 필요` 이슈
+
+tesla.com 이 headless 브라우저와 데이터센터 IP(GitHub Actions 포함)를 막아서 GitHub Actions 가 아니라
+가정용 회선의 맥에서 launchd 로 매일 07:00 에 돈다.
+
+```sh
+scripts/install-launchd.sh                                   # 설치
+launchctl bootout gui/$(id -u)/com.baekhg.tesla-kr-lineup    # 제거
+tail -f ~/Library/Logs/tesla-kr-lineup.log                   # 로그
+```
+
 ## 봇 (`scripts/check-lineup.mjs`)
 
 매일 Tesla 가격 API와 뉴스를 확인하고, 사람이 볼 변경이 있으면 `auto/lineup-refresh` PR을 연다.
