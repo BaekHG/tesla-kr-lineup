@@ -46,3 +46,10 @@ tail -f ~/Library/Logs/tesla-kr-lineup.log                   # 로그
 그리고 맥 launchd 작업(`run-homepage-local.sh`) 끝에 한 번 더 돈다.
 공공 데이터 사본이라 변경이 있으면 리뷰 없이 main 에 바로 커밋한다.
 일부 지역만 읽히면 파일을 덮어쓰지 않는다.
+
+## 테슬라 운반선 (`vessels.json`)
+
+`scripts/check-vessels.mjs` 가 관세청 UNI-PASS 화물통관진행정보(API001)로 평택항 테슬라 운반선을
+찾는다. 글로비스 평택 수입 MRN(`26GLVSP###I`)이 순서대로 붙는 걸 이용해 마지막 번호 뒤를 훑고,
+상하이 선적 `(TESLA) MOTOR VEHICLES` 묶음만 합친다. 차종은 세관 신고 1대당 무게로 나눈다.
+3시간마다 Actions(`vessels-check.yml`, secret `CUSTOMS_KEY_CARGO`) + 맥 launchd 에서 돈다.
