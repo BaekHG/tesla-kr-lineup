@@ -46,15 +46,17 @@ const HIDDEN_MODEL_PAGES = ['models', 'modelx'];
 
 async function main() {
   const override = JSON.parse(await fs.readFile(OVERRIDE_PATH, 'utf8'));
-  // tesla.com(Akamai)은 headless 와 자동화 표식을 막는다. 실제 Chrome 을 화면 있는
-  // 모드로 띄우고 자동화 플래그를 끈다. CI 에선 xvfb-run 으로 가상 화면을 준다.
+  // tesla.com(Akamai)은 headless 와 자동화 표식, 데이터센터 IP 를 막는다.
+  // 그래서 GitHub Actions 가 아니라 가정용 회선의 맥에서 돌린다 (run-homepage-local.sh).
+  // 실제 Chrome 을 화면 있는 모드로 띄우고 자동화 플래그를 끈다.
   const profileDir = await fs.mkdtemp(path.join(os.tmpdir(), 'tesla-kr-'));
   const context = await chromium.launchPersistentContext(profileDir, {
     channel: 'chrome',
     headless: false,
     locale: 'ko-KR',
     ignoreDefaultArgs: ['--enable-automation'],
-    args: ['--disable-blink-features=AutomationControlled'],
+    // 맥에서 돌 때 창이 화면에 안 보이게 화면 밖에 띄운다.
+    args: ['--disable-blink-features=AutomationControlled', '--window-position=-32000,-32000'],
   });
   const page = context.pages()[0] ?? (await context.newPage());
 
