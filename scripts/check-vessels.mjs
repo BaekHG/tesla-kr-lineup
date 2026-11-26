@@ -26,10 +26,12 @@ const API =
   'https://unipass.customs.go.kr:38010/ext/rest/cargCsclPrgsInfoQry/retrieveCargCsclPrgsInfo';
 
 // 첫 실행 기준점. 이후엔 vessels.json 의 마지막 번호부터.
-const SEED_SEQ = 350;
+const SEED_SEQ = 300;
 const LOOK_BACK = 10;
 const LOOK_AHEAD = 40;
-const KEEP_DAYS = 60;
+const KEEP_DAYS = 120;
+// 테슬라 몇 대 끼어 온 배(예: 1대)는 정기 운반선이 아니라 통계를 흐린다.
+const MIN_CARS = 50;
 
 // 1대당 무게(kg) → 차종. 세관 신고 무게라 트림마다 고정값.
 const MODEL_BY_KG = {
@@ -80,6 +82,8 @@ async function readVessel(mrn) {
   let cleared = 0;
   let released = 0;
   let lastEvent = null;
+  // 차 한 대마다 찍힌 반출 시각 — 입항 후 며칠 만에 빠지는지 계산용.
+  const releaseTimes = [];
   for (let msn = 1; msn <= 400; msn++) {
     const r = await query(`${mrn}${String(msn).padStart(4, '0')}`);
     if (!r) {
@@ -101,6 +105,8 @@ async function readVessel(mrn) {
         cleared += n;
       } else if (kind === '반출신고') {
         released += n;
+        const t = toIso(d.rlbrDttm);
+        if (t) for (let k = 0; k < Math.max(n, 1); k++) releaseTimes.push(t);
       }
       if (d.prcsDttm && (!lastEvent || d.prcsDttm > lastEvent)) lastEvent = d.prcsDttm;
     }
@@ -121,6 +127,71 @@ async function readVessel(mrn) {
       .map(([model, count]) => ({ model, count }))
       .sort((a, b) => b.count - a.count),
     lastEventAt: lastEvent,
+    releaseTimeline: releaseTimeline(releaseTimes, total),
+  };
+}
+
+/** "2026-11-24 15:26:15" 또는 "20261124152615" → ISO(+09:00). */
+function toIso(raw) {
+  const s = String(raw ?? '').replace(/[^0-9]/g, '');
+  if (s.length < 12) return null;
+  const sec = s.length >= 14 ? s.slice(12, 14) : '00';
+  return `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}T${s.slice(8, 10)}:${s.slice(10, 12)}:${sec}+09:00`;
+}
+
+/** 전체 대수 기준으로 처음 · 절반 · 90% · 전부 반출된 시각. 아직 안 된 단계는 null. */
+function releaseTimeline(times, total) {
+  if (times.length === 0 || total <= 0) return null;
+  const sorted = [...times].sort();
+  const at = (ratio) => {
+    const need = Math.ceil(total * ratio);
+    return sorted.length >= need ? sorted[need - 1] : null;
+  };
+  return { first: sorted[0], half: at(0.5), p90: at(0.9), full: at(1) };
+}
+
+const DAY = 86_400_000;
+const median = (xs) => {
+  if (xs.length === 0) return null;
+  const s = [...xs].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+};
+const round1 = (x) => (x == null ? null : Math.round(x * 10) / 10);
+
+/**
+ * 지난 배들로 만든 통계 (앱에서 "보통 입항 후 N일" · "다음 배 예상" 에 쓴다).
+ * 표본이 적으면 null — 앱은 "데이터 모으는 중" 으로 보여준다.
+ */
+function buildStats(vessels) {
+  const arrivalMs = (v) => Date.parse(`${v.arrivalDate}T00:00:00+09:00`);
+  const daysTo = (key) =>
+    vessels
+      .map((v) => v.releaseTimeline?.[key])
+      .map((t, i) => (t ? (Date.parse(t) - arrivalMs(vessels[i])) / DAY : null))
+      .filter((d) => d != null && d >= 0 && d < 60);
+  const firstDays = daysTo('first');
+  const halfDays = daysTo('half');
+  const fullDays = daysTo('full');
+
+  const arrivals = [...new Set(vessels.map((v) => v.arrivalDate))].sort();
+  const gaps = arrivals
+    .slice(1)
+    .map((d, i) => (Date.parse(d) - Date.parse(arrivals[i])) / DAY)
+    .filter((g) => g > 0);
+  const gap = median(gaps);
+  const last = arrivals.at(-1);
+  return {
+    sampleVessels: vessels.length,
+    daysToFirstRelease: firstDays.length >= 2 ? round1(median(firstDays)) : null,
+    daysToHalfRelease: halfDays.length >= 2 ? round1(median(halfDays)) : null,
+    daysToFullRelease: fullDays.length >= 2 ? round1(median(fullDays)) : null,
+    arrivalGapDays: gaps.length >= 3 ? round1(gap) : null,
+    // 마지막 입항 + 보통 간격. 추정이라 앱에서 "쯤" 으로 표시.
+    nextArrivalEstimate:
+      gaps.length >= 3 && last
+        ? new Date(Date.parse(last) + Math.round(gap) * DAY).toISOString().slice(0, 10)
+        : null,
   };
 }
 
@@ -142,7 +213,7 @@ async function main() {
   // 이미 반출 끝난 배는 다시 안 읽는다.
   const done = new Map(
     (prev?.vessels ?? [])
-      .filter((v) => v.totalCars > 0 && v.released >= v.totalCars)
+      .filter((v) => v.totalCars > 0 && v.released >= v.totalCars && v.releaseTimeline)
       .map((v) => [v.mrn, v]),
   );
 
@@ -167,7 +238,7 @@ async function main() {
 
   const cutoff = Date.now() - KEEP_DAYS * 86_400_000;
   const vessels = [...found.values()]
-    .filter((v) => Date.parse(v.arrivalDate) >= cutoff)
+    .filter((v) => Date.parse(v.arrivalDate) >= cutoff && v.totalCars >= MIN_CARS)
     .sort((a, b) => b.arrivalDate.localeCompare(a.arrivalDate));
 
   if (vessels.length === 0 && (prev?.vessels?.length ?? 0) > 0) {
@@ -175,9 +246,13 @@ async function main() {
     throw new Error('배를 하나도 못 찾았어요 (기존 파일 유지)');
   }
 
-  const changed = JSON.stringify(prev?.vessels) !== JSON.stringify(vessels);
+  const stats = buildStats(vessels);
+  const changed =
+    JSON.stringify(prev?.vessels) !== JSON.stringify(vessels) ||
+    JSON.stringify(prev?.stats) !== JSON.stringify(stats);
   const out = {
-    schemaVersion: 1,
+    schemaVersion: 2,
+    stats,
     source: 'UNI-PASS 화물통관진행정보',
     updatedAt: changed ? new Date().toISOString() : prev.updatedAt,
     vessels,
