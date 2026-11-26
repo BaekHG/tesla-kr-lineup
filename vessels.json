@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "UNI-PASS 화물통관진행정보",
-  "updatedAt": "2026-11-26T02:25:26.585Z",
+  "updatedAt": "2026-11-26T03:25:27.205Z",
   "vessels": [
     {
       "mrn": "26GLVSP397I",
@@ -11,7 +11,7 @@
       "arrivalDate": "2026-11-20",
       "totalCars": 3142,
       "cleared": 3142,
-      "released": 2469,
+      "released": 2514,
       "models": [
         {
           "model": "모델 Y RWD",
@@ -26,7 +26,7 @@
           "count": 249
         }
       ],
-      "lastEventAt": "20261126111737"
+      "lastEventAt": "20261126113752"
     },
     {
       "mrn": "26GLVSP389I",
