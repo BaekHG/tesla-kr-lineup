@@ -60,3 +60,10 @@ tail -f ~/Library/Logs/tesla-kr-lineup.log                   # 로그
 맞추고(스크립트 수정 자동 반영) Playwright 공식 Docker 이미지에서 CPU 1개·메모리 2GB 로 실행한다.
 키는 서버의 `~/.tesla-kr-lineup.env`, push 는 쓰기 권한 deploy key(`oracle-a1 bot`).
 Actions 는 서버가 멈췄을 때를 위한 예비로 계속 돈다. tesla.com 확인은 데이터센터 IP 가 막혀서 맥에서만.
+
+## FSD 소식 (Supabase `fsd_news`)
+
+`scripts/check-fsd.mjs` 가 구글 뉴스(국내·해외), Electrek, Teslarati, Not a Tesla App 에서 제목에
+FSD·자율주행·로보택시가 들어간 소식만 모아 Supabase 테이블에 바로 넣는다(GitHub raw 캐시 없이
+앱에 즉시 반영). Oracle 서버 10분마다, Actions 30분마다(예비). 같은 기사는 제목으로 한 번만,
+블로그·카페 제외, 30일 지나면 삭제. 키: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`.
