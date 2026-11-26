@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-# Oracle 서버(arm64) cron 진입점. 사용: run-server.sh vessels|subsidy
+# Oracle 서버(arm64) cron 진입점. 사용: run-server.sh vessels|subsidy|fsd
 #
 # - flock: 같은 작업이 겹쳐 돌지 않게.
 # - 매번 origin/main 으로 맞춘다 → 스크립트를 고치면 다음 실행부터 자동 반영.
 # - Docker(Playwright 공식 이미지)에서 CPU 1개·메모리 2GB 로 제한 → 같은 서버의 다른 서비스 보호.
 # - 실패해도 기존 JSON 은 안 건드리고, push 충돌이면 버리고 다음 회차에 다시.
-# 키: ~/.tesla-kr-lineup.env (CUSTOMS_KEY_CARGO, DATA_GO_KR_KEY)
+# 키: ~/.tesla-kr-lineup.env (CUSTOMS_KEY_CARGO, DATA_GO_KR_KEY, SUPABASE_URL, SUPABASE_SECRET_KEY)
 set -euo pipefail
 
-JOB="${1:?vessels|subsidy}"
+JOB="${1:?vessels|subsidy|fsd}"
 case "$JOB" in
   vessels) SCRIPT=scripts/check-vessels.mjs; OUT=vessels.json; MSG="auto: 테슬라 운반선 현황 갱신" ;;
   subsidy) SCRIPT=scripts/check-subsidy.mjs; OUT=subsidy_status.json; MSG="auto: 보조금 현황 갱신" ;;
+  # FSD 소식은 Supabase 에 바로 넣는다 → git 커밋 없음.
+  fsd) SCRIPT=scripts/check-fsd.mjs; OUT=""; MSG="" ;;
   *) echo "unknown job: $JOB" >&2; exit 2 ;;
 esac
 
@@ -43,10 +45,12 @@ if timeout 25m docker run --rm \
     bash -c 'cmp -s package-lock.json node_modules/.lock-copy 2>/dev/null || { npm ci --no-audit --no-fund --silent && cp package-lock.json node_modules/.lock-copy; }; node '"$SCRIPT"; then
   :
 else
-  echo "$JOB: 수집 실패 (exit $?) — 기존 파일 유지"
-  git checkout -q -- "$OUT" 2>/dev/null || true
+  echo "$JOB: 수집 실패 (exit $?) — 기존 데이터 유지"
+  [[ -n "$OUT" ]] && git checkout -q -- "$OUT" 2>/dev/null || true
   exit 1
 fi
+
+[[ -z "$OUT" ]] && exit 0
 
 # 컨테이너는 root 로 쓰므로 소유권을 되돌린다.
 sudo chown -R "$(id -u):$(id -g)" "$REPO" 2>/dev/null || true
