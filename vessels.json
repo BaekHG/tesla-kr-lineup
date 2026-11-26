@@ -1,7 +1,15 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "stats": {
+    "sampleVessels": 8,
+    "daysToFirstRelease": 2.5,
+    "daysToHalfRelease": 5,
+    "daysToFullRelease": 7.7,
+    "arrivalGapDays": 6,
+    "nextArrivalEstimate": "2026-11-26"
+  },
   "source": "UNI-PASS 화물통관진행정보",
-  "updatedAt": "2026-11-26T08:25:26.702Z",
+  "updatedAt": "2026-11-26T09:24:36.627Z",
   "vessels": [
     {
       "mrn": "26GLVSP397I",
@@ -11,7 +19,7 @@
       "arrivalDate": "2026-11-20",
       "totalCars": 3142,
       "cleared": 3142,
-      "released": 2970,
+      "released": 3042,
       "models": [
         {
           "model": "모델 Y RWD",
@@ -26,7 +34,13 @@
           "count": 249
         }
       ],
-      "lastEventAt": "20261126171754"
+      "lastEventAt": "20261126175646",
+      "releaseTimeline": {
+        "first": "2026-11-21T13:16:10+09:00",
+        "half": "2026-11-24T14:36:14+09:00",
+        "p90": "2026-11-26T16:06:16+09:00",
+        "full": null
+      }
     },
     {
       "mrn": "26GLVSP389I",
@@ -51,7 +65,13 @@
           "count": 4
         }
       ],
-      "lastEventAt": "20261119164808"
+      "lastEventAt": "20261119164808",
+      "releaseTimeline": {
+        "first": "2026-11-14T08:16:02+09:00",
+        "half": "2026-11-17T13:56:02+09:00",
+        "p90": "2026-11-18T18:26:02+09:00",
+        "full": "2026-11-19T16:47:50+09:00"
+      }
     },
     {
       "mrn": "26GLVSP380I",
@@ -76,7 +96,13 @@
           "count": 778
         }
       ],
-      "lastEventAt": "20261113161634"
+      "lastEventAt": "20261113161634",
+      "releaseTimeline": {
+        "first": "2026-11-09T08:15:56+09:00",
+        "half": "2026-11-11T10:55:59+09:00",
+        "p90": "2026-11-13T13:16:03+09:00",
+        "full": "2026-11-13T16:16:02+09:00"
+      }
     },
     {
       "mrn": "26GLVSP376I",
@@ -93,7 +119,13 @@
           "count": 850
         }
       ],
-      "lastEventAt": "20261104154717"
+      "lastEventAt": "20261104154717",
+      "releaseTimeline": {
+        "first": "2026-11-03T14:05:54+09:00",
+        "half": "2026-11-03T16:35:54+09:00",
+        "p90": "2026-11-04T15:05:53+09:00",
+        "full": "2026-11-04T15:45:53+09:00"
+      }
     },
     {
       "mrn": "26GLVSP373I",
@@ -110,7 +142,13 @@
           "count": 1000
         }
       ],
-      "lastEventAt": "20261102180641"
+      "lastEventAt": "20261102180641",
+      "releaseTimeline": {
+        "first": "2026-10-30T13:35:53+09:00",
+        "half": "2026-11-02T14:35:53+09:00",
+        "p90": "2026-11-02T17:25:53+09:00",
+        "full": "2026-11-02T18:05:53+09:00"
+      }
     },
     {
       "mrn": "26GLVSP367I",
@@ -127,7 +165,13 @@
           "count": 3005
         }
       ],
-      "lastEventAt": "20261029171734"
+      "lastEventAt": "20261029171734",
+      "releaseTimeline": {
+        "first": "2026-10-24T10:05:53+09:00",
+        "half": "2026-10-27T11:05:54+09:00",
+        "p90": "2026-10-29T15:15:54+09:00",
+        "full": "2026-10-29T17:15:54+09:00"
+      }
     },
     {
       "mrn": "26GLVSP356I",
@@ -144,7 +188,40 @@
           "count": 2993
         }
       ],
-      "lastEventAt": "20261021162728"
+      "lastEventAt": "20261021162728",
+      "releaseTimeline": {
+        "first": "2026-10-19T11:15:52+09:00",
+        "half": "2026-10-20T14:05:52+09:00",
+        "p90": "2026-10-21T14:25:54+09:00",
+        "full": "2026-10-21T16:25:53+09:00"
+      }
+    },
+    {
+      "mrn": "26GLVSP343I",
+      "ship": "HORIZON RAY",
+      "loadPort": "Shanghai",
+      "port": "평택항",
+      "arrivalDate": "2026-10-04",
+      "totalCars": 2448,
+      "cleared": 2448,
+      "released": 2448,
+      "models": [
+        {
+          "model": "모델 3 RWD",
+          "count": 2443
+        },
+        {
+          "model": "모델 Y L",
+          "count": 5
+        }
+      ],
+      "lastEventAt": "20261008174649",
+      "releaseTimeline": {
+        "first": "2026-10-06T14:15:52+09:00",
+        "half": "2026-10-07T10:55:52+09:00",
+        "p90": "2026-10-08T14:35:52+09:00",
+        "full": "2026-10-08T17:45:51+09:00"
+      }
     }
   ]
 }
