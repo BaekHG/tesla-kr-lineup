@@ -67,3 +67,10 @@ Actions 는 서버가 멈췄을 때를 위한 예비로 계속 돈다. tesla.com
 FSD·자율주행·로보택시가 들어간 소식만 모아 Supabase 테이블에 바로 넣는다(GitHub raw 캐시 없이
 앱에 즉시 반영). Oracle 서버 10분마다, Actions 30분마다(예비). 같은 기사는 제목으로 한 번만,
 블로그·카페 제외, 30일 지나면 삭제. 키: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`.
+
+## 테슬라 계정 동기화 (`scripts/tesla-sync.mjs`)
+
+앱에서 테슬라 계정을 연결한 사용자마다 Fleet API(NA/APAC)로 슈퍼차저 충전 기록(요금 포함),
+주행거리·배터리·소프트웨어 버전을 받아 Supabase(`tesla_vehicle_state`, `tesla_charging_sessions`)에 넣는다.
+토큰은 `tesla_links`(RLS 정책 없음 = 서버만). 차가 online 일 때만 상태를 읽어 깨우는 비용을 안 쓴다.
+Oracle 30분마다. `TESLA_CLIENT_ID` 가 없으면(개발자 앱 등록 전) 아무것도 안 한다.
