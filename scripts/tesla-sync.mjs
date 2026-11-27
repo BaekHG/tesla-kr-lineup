@@ -143,6 +143,15 @@ async function syncOne(link) {
         fast_charger_present: charging ? Boolean(cs.fast_charger_present) : (prev?.fast_charger_present ?? null),
         fast_charger_type: charging ? (cs.fast_charger_type ?? null) : (prev?.fast_charger_type ?? null),
         software_version: vs.car_version ?? null,
+        // 타이어 공기압 (bar) — 권장값과 함께. 센서가 아직 못 읽었으면 null.
+        tpms_fl: vs.tpms_pressure_fl ?? null,
+        tpms_fr: vs.tpms_pressure_fr ?? null,
+        tpms_rl: vs.tpms_pressure_rl ?? null,
+        tpms_rr: vs.tpms_pressure_rr ?? null,
+        tpms_rcp_front: vs.tpms_rcp_front_value ?? null,
+        tpms_rcp_rear: vs.tpms_rcp_rear_value ?? null,
+        tpms_warning: [vs.tpms_soft_warning_fl, vs.tpms_soft_warning_fr, vs.tpms_soft_warning_rl, vs.tpms_soft_warning_rr,
+          vs.tpms_hard_warning_fl, vs.tpms_hard_warning_fr, vs.tpms_hard_warning_rl, vs.tpms_hard_warning_rr].some(Boolean),
         updated_at: new Date().toISOString(),
       }], 'user_id');
       note += ' · state';
