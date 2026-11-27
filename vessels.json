@@ -4,12 +4,12 @@
     "sampleVessels": 8,
     "daysToFirstRelease": 2.5,
     "daysToHalfRelease": 5,
-    "daysToFullRelease": 7.7,
+    "daysToFullRelease": 7.6,
     "arrivalGapDays": 6,
     "nextArrivalEstimate": "2026-11-26"
   },
   "source": "UNI-PASS 화물통관진행정보",
-  "updatedAt": "2026-11-27T01:25:25.906Z",
+  "updatedAt": "2026-11-27T01:42:51.868Z",
   "vessels": [
     {
       "mrn": "26GLVSP397I",
@@ -19,7 +19,7 @@
       "arrivalDate": "2026-11-20",
       "totalCars": 3142,
       "cleared": 3142,
-      "released": 3132,
+      "released": 3142,
       "models": [
         {
           "model": "모델 Y RWD",
@@ -34,12 +34,12 @@
           "count": 249
         }
       ],
-      "lastEventAt": "20261127100706",
+      "lastEventAt": "20261127102643",
       "releaseTimeline": {
         "first": "2026-11-21T13:16:10+09:00",
         "half": "2026-11-24T14:36:14+09:00",
         "p90": "2026-11-26T16:06:16+09:00",
-        "full": null
+        "full": "2026-11-27T10:26:15+09:00"
       }
     },
     {
