@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-11-25",
+  "sections": {
+    "documents": [
+      {
+        "id": "doc_id",
+        "title": "신분증 사본",
+        "detail": "앞면 사진. 주소가 최신인지 확인"
+      },
+      {
+        "id": "doc_resident",
+        "title": "주민등록초본",
+        "detail": "보조금 거주 요건 확인용. 정부24에서 발급"
+      },
+      {
+        "id": "doc_family",
+        "title": "가족관계증명서",
+        "detail": "다자녀·생애 첫 차 추가 보조금 받을 때"
+      },
+      {
+        "id": "doc_business",
+        "title": "사업자등록증",
+        "detail": "법인·개인사업자 명의일 때만"
+      },
+      {
+        "id": "doc_insurance",
+        "title": "보험 가입 증명서",
+        "detail": "등록 전에 필요. 차대번호 나온 뒤 가입"
+      },
+      {
+        "id": "doc_loan",
+        "title": "할부 승인서",
+        "detail": "할부로 살 때 금융사 승인 완료 확인"
+      }
+    ],
+    "warnings": [
+      {
+        "id": "warn_name",
+        "title": "명의는 나중에 못 바꿔요",
+        "detail": "보조금은 명의자 기준으로 나와요. 공동명의·가족 명의는 설문 전에 정하세요"
+      },
+      {
+        "id": "warn_region",
+        "title": "보조금 지역은 신청 후 못 바꿔요",
+        "detail": "주소지 기준이라 이사 계획이 있으면 먼저 옮기고 신청하세요"
+      },
+      {
+        "id": "warn_payment",
+        "title": "결제 수단은 미리 정해요",
+        "detail": "카드 결제는 삼성카드만 돼요. 할부·현금 여부도 설문에서 정해요"
+      },
+      {
+        "id": "warn_delivery",
+        "title": "인도 방식에 따라 비용이 달라요",
+        "detail": "광명 센터 직접 인도는 무료, 탁송은 약 20만원이에요"
+      },
+      {
+        "id": "warn_registration",
+        "title": "등록 대행 수수료가 있어요",
+        "detail": "테슬라 등록 대행 시 약 52,000원. 직접 하면 아낄 수 있어요"
+      },
+      {
+        "id": "warn_subsidy_deadline",
+        "title": "보조금 선정 후 기한 안에 출고돼야 해요",
+        "detail": "기한을 넘기면 선정이 취소될 수 있어요. 지역 공고를 확인하세요"
+      }
+    ],
+    "inspection": [
+      {
+        "id": "ins_paint",
+        "title": "도장 상태",
+        "detail": "밝은 곳에서 문·트렁크 주변, 범퍼 모서리"
+      },
+      {
+        "id": "ins_gap",
+        "title": "단차",
+        "detail": "문·트렁크·프렁크 틈이 좌우 같은지"
+      },
+      {
+        "id": "ins_glass",
+        "title": "유리",
+        "detail": "앞유리·루프 글라스 흠집과 크랙"
+      },
+      {
+        "id": "ins_wheels",
+        "title": "휠·타이어",
+        "detail": "휠 긁힘, 타이어 사양이 주문과 같은지"
+      },
+      {
+        "id": "ins_interior",
+        "title": "실내",
+        "detail": "시트 오염, 대시보드 틈, 천장 마감"
+      },
+      {
+        "id": "ins_screen",
+        "title": "화면·카메라",
+        "detail": "터치 반응, 후방·측면 카메라 화면"
+      },
+      {
+        "id": "ins_doors",
+        "title": "문·창문",
+        "detail": "모든 문 여닫기, 창문 끝까지 올라가는지"
+      },
+      {
+        "id": "ins_charge",
+        "title": "충전 포트",
+        "detail": "포트 열림, 충전 케이블 동봉 여부"
+      },
+      {
+        "id": "ins_vin",
+        "title": "차대번호 일치",
+        "detail": "서류와 차량(앞유리 아래)의 번호가 같은지"
+      },
+      {
+        "id": "ins_km",
+        "title": "주행거리",
+        "detail": "인도 전 주행거리가 비정상적으로 높지 않은지"
+      }
+    ],
+    "first_day": [
+      {
+        "id": "set_key",
+        "title": "폰 키 등록",
+        "detail": "테슬라 앱에서 폰을 키로 등록, 키카드도 확인"
+      },
+      {
+        "id": "set_profile",
+        "title": "운전자 프로필",
+        "detail": "시트·미러·핸들 위치 저장"
+      },
+      {
+        "id": "set_pin",
+        "title": "PIN 주행 설정",
+        "detail": "키카드 도난 대비. 차량 > 안전"
+      },
+      {
+        "id": "set_sentry",
+        "title": "감시 모드",
+        "detail": "주차 중 녹화. USB 저장장치 필요"
+      },
+      {
+        "id": "set_charge_limit",
+        "title": "충전 한도",
+        "detail": "평소엔 80~90% 권장 (LFP 배터리는 100%)"
+      },
+      {
+        "id": "set_wifi",
+        "title": "집 Wi-Fi 연결",
+        "detail": "소프트웨어 업데이트 받으려면 필요"
+      },
+      {
+        "id": "set_card",
+        "title": "충전 카드",
+        "detail": "슈퍼차저 결제 수단, 환경부 충전카드 신청"
+      },
+      {
+        "id": "set_photo",
+        "title": "인도 직후 사진",
+        "detail": "외관·주행거리 사진은 나중에 분쟁 대비용"
+      }
+    ]
+  }
+}
