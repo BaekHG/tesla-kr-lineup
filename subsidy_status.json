@@ -3,7 +3,7 @@
   "source": "https://ev.or.kr/nportal/buySupprt/initSubsidyPaymentCheckAction.do",
   "year": 2026,
   "carType": "전기승용",
-  "updatedAt": "2026-11-27T14:40:39.912Z",
+  "updatedAt": "2026-11-27T16:40:40.824Z",
   "regions": [
     {
       "region": "서울특별시",
@@ -3628,7 +3628,7 @@
     {
       "region": "양산시",
       "short": "경남",
-      "closed": false,
+      "closed": true,
       "deadline": "2026.11.27 15:00",
       "announced": 1576,
       "received": 1701,
@@ -3931,7 +3931,7 @@
       "closed": false,
       "deadline": "2026.12.18 18:00",
       "announced": 30000,
-      "received": 71183,
+      "received": 71180,
       "selected": 62909,
       "released": 56907,
       "selectionRemaining": 0,
