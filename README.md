@@ -54,6 +54,13 @@ tail -f ~/Library/Logs/tesla-kr-lineup.log                   # 로그
 상하이 선적 `(TESLA) MOTOR VEHICLES` 묶음만 합친다. 차종은 세관 신고 1대당 무게로 나눈다.
 3시간마다 Actions(`vessels-check.yml`, secret `CUSTOMS_KEY_CARGO`) + 맥 launchd 에서 돈다.
 
+## 인도 준비 가이드 (`delivery_guide.json`)
+
+앱 "가이드" 탭의 체크리스트(서류·되돌릴 수 없는 선택·인도일 검수·첫날 세팅). 사람이 직접 고친다.
+테슬라 절차·수수료가 바뀌면 항목과 `verifiedAt` 을 같이 고친다. `id` 는 앱의 체크 저장 키라 바꾸면
+사용자 체크가 풀린다 — 문구만 바꿀 땐 `id` 를 그대로 둔다. 앱은 열 때마다 받아 캐시하고, 못 받으면
+캐시 → 앱에 들어 있는 기본값 순으로 쓴다. 섹션 키: `documents`, `warnings`, `inspection`, `first_day`.
+
 ## Oracle 서버
 
 `scripts/run-server.sh vessels|subsidy` 를 Oracle A1(arm64) cron 이 돌린다. 매번 origin/main 으로
