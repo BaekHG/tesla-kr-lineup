@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Oracle 서버(arm64) cron 진입점. 사용: run-server.sh vessels|subsidy|fsd
+# Oracle 서버(arm64) cron 진입점. 사용: run-server.sh vessels|subsidy|fsd|tesla
 #
 # - flock: 같은 작업이 겹쳐 돌지 않게.
 # - 매번 origin/main 으로 맞춘다 → 스크립트를 고치면 다음 실행부터 자동 반영.
@@ -8,12 +8,14 @@
 # 키: ~/.tesla-kr-lineup.env (CUSTOMS_KEY_CARGO, DATA_GO_KR_KEY, SUPABASE_URL, SUPABASE_SECRET_KEY)
 set -euo pipefail
 
-JOB="${1:?vessels|subsidy|fsd}"
+JOB="${1:?vessels|subsidy|fsd|tesla}"
 case "$JOB" in
   vessels) SCRIPT=scripts/check-vessels.mjs; OUT=vessels.json; MSG="auto: 테슬라 운반선 현황 갱신" ;;
   subsidy) SCRIPT=scripts/check-subsidy.mjs; OUT=subsidy_status.json; MSG="auto: 보조금 현황 갱신" ;;
   # FSD 소식은 Supabase 에 바로 넣는다 → git 커밋 없음.
   fsd) SCRIPT=scripts/check-fsd.mjs; OUT=""; MSG="" ;;
+  # 테슬라 계정 연결 사용자 동기화 → Supabase 직접. 키(TESLA_CLIENT_ID) 없으면 바로 끝남.
+  tesla) SCRIPT=scripts/tesla-sync.mjs; OUT=""; MSG="" ;;
   *) echo "unknown job: $JOB" >&2; exit 2 ;;
 esac
 
