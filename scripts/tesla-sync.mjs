@@ -107,17 +107,22 @@ async function syncOne(link) {
       const cs = data.charge_state ?? {};
       const vs = data.vehicle_state ?? {};
       const [prev] =
-        (await sb(`tesla_vehicle_state?user_id=eq.${link.user_id}&select=charging_state,charge_energy_added`)) ?? [];
+        (await sb(
+          `tesla_vehicle_state?user_id=eq.${link.user_id}&select=charging_state,charge_energy_added,fast_charger_present,fast_charger_type`,
+        )) ?? [];
       const level = cs.battery_level ?? null;
       const rangeKm = cs.battery_range != null ? cs.battery_range * MI_TO_KM : null;
-      // 집·완속 충전이 끝났으면 세션 하나 (슈퍼차저는 위 기록으로 잡힌다).
-      if (prev?.charging_state === 'Charging' && cs.charging_state !== 'Charging' && Number(prev.charge_energy_added) > 0 &&
-        cs.fast_charger_type !== 'Tesla') {
+      const charging = cs.charging_state === 'Charging';
+      // 충전이 끝나면 플러그가 빠져 충전기 종류를 모르니, 충전 중에 본 값(prev)으로 판단한다.
+      const wasFast = Boolean(prev?.fast_charger_present);
+      const wasTesla = prev?.fast_charger_type === 'Tesla' || cs.fast_charger_type === 'Tesla';
+      // 집·완속·공용 급속 충전이 끝났으면 세션 하나 (슈퍼차저는 위 기록으로 잡힌다).
+      if (prev?.charging_state === 'Charging' && !charging && Number(prev.charge_energy_added) > 0 && !wasTesla) {
         sessions.push({
           user_id: link.user_id,
           id: `ot_${v.vin}_${Date.now()}`,
           vin: v.vin,
-          kind: 'other',
+          kind: wasFast ? 'fast' : 'other',
           started_at: new Date().toISOString(),
           ended_at: new Date().toISOString(),
           kwh: round1(Number(prev.charge_energy_added)),
@@ -134,6 +139,9 @@ async function syncOne(link) {
         full_range_km: level != null && level >= 50 && rangeKm != null ? round1(rangeKm / (level / 100)) : null,
         charging_state: cs.charging_state ?? null,
         charge_energy_added: cs.charge_energy_added ?? null,
+        // 충전 중일 때만 갱신 — 끝난 뒤 값(false)으로 덮어쓰면 방금 세션 종류를 잃는다.
+        fast_charger_present: charging ? Boolean(cs.fast_charger_present) : (prev?.fast_charger_present ?? null),
+        fast_charger_type: charging ? (cs.fast_charger_type ?? null) : (prev?.fast_charger_type ?? null),
         software_version: vs.car_version ?? null,
         updated_at: new Date().toISOString(),
       }], 'user_id');
